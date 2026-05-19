@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6" />
+  </startup>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="EPPlus" publicKeyToken="ea159fdaa78159a1" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-7.5.2.0" newVersion="7.5.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Syncfusion.Tools.Windows" publicKeyToken="3d67ed1f87d44c89" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-14.4400.0.20" newVersion="14.4400.0.20" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Syncfusion.Shared.Base" publicKeyToken="3d67ed1f87d44c89" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-14.4400.0.20" newVersion="14.4400.0.20" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Syncfusion.Grid.Windows" publicKeyToken="3d67ed1f87d44c89" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-14.4400.0.20" newVersion="14.4400.0.20" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

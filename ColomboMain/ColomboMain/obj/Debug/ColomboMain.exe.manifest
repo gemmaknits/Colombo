@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q3sLi9EAMtfj/iw5IQXkkhlPn8jD8OGyattsROXwWD4=</dsig:DigestValue>
+        <dsig:DigestValue>qaPaQw/HvvyFwXm2kX5GRGkaU+4sdcSi6S3tDdP1+WA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -199,14 +199,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sales Order System (Eschler).exe" size="6302208">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Sales Order System (Eschler).exe" size="6303232">
       <assemblyIdentity name="Sales Order System (Eschler)" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>+KbWay63qqC8inqs/E6gMKSlWKU0U544qyCtrchfyMQ=</dsig:DigestValue>
+        <dsig:DigestValue>8fCVCitVSeo0UBqophTLM7podq+zlKjC1kGowzXTX0Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
