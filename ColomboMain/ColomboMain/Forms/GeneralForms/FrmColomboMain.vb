@@ -1483,6 +1483,7 @@ Public Class FrmColomboMain
     Private Sub btnCuttingInPurchase_Click(sender As Object, e As EventArgs) Handles btnCuttingInPurchase.Click
         Dim frm As New SalesOrderSystem.frmStockDINPurchase
         SetUserInfo(frm.UserInfo)
+        frm.pStockType = "C"
         frm.Text = "CIN Purchase"
         frm.Show()
     End Sub

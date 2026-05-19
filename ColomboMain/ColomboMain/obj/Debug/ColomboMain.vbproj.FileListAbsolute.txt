@@ -71,3 +71,59 @@ D:\DOTNET\COLOMBO\ColomboMain\ColomboMain\obj\Debug\ColomboMain.exe
 D:\DOTNET\COLOMBO\ColomboMain\ColomboMain\obj\Debug\ColomboMain.xml
 D:\DOTNET\COLOMBO\ColomboMain\ColomboMain\obj\Debug\ColomboMain.pdb
 D:\DOTNET\COLOMBO\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbprojResolveAssemblyReference.cache
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\SqlServerTypes\x64\msvcr100.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\SqlServerTypes\x64\SqlServerSpatial110.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\SqlServerTypes\x86\msvcr100.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\SqlServerTypes\x86\SqlServerSpatial110.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ColomboMain.exe.config
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ColomboMain.exe.manifest
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ColomboMain.application
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ColomboMain.exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ColomboMain.pdb
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ColomboMain.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Classes.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EPPlus.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EPPlus.Interfaces.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EPPlus.System.Drawing.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Invoice System (Eschler).exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Newtonsoft.Json.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Production System (Eschler).exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Purchase Order System (Eschler).exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\RestSharp.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Sales Order System (Eschler).exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\STV.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Yarn Stock System (Eschler).exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Windows.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Base.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Windows.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.SpellChecker.Base.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EnvDTE.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Base.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Windows.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Base.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EPPlus.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Newtonsoft.Json.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Windows.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Base.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Windows.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.SpellChecker.Base.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Base.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Windows.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Base.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.AssemblyReference.cache
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.SuggestedBindingRedirects.cache
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.exe.config
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.frmLogin.resources
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.FrmColomboMain.resources
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.Resources.resources
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.GenerateResource.cache
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.CoreCompileInputs.cache
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.TrustInfo.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.exe.manifest
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.application
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboM.0E4A1695.Up2Date
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.exe
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.xml
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.pdb
