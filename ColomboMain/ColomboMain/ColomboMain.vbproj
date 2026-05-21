@@ -27,7 +27,7 @@
     <ProductName>Colombo Main</ProductName>
     <PublisherName>ColomboMain</PublisherName>
     <SuiteName>Colombo Business System</SuiteName>
-    <ApplicationRevision>125</ApplicationRevision>
+    <ApplicationRevision>126</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
