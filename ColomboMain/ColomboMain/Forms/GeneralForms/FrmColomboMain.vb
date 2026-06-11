@@ -1503,6 +1503,12 @@ Public Class FrmColomboMain
         frm.Show()
     End Sub
 
+    Private Sub btnInvoiceExportControl_Click(sender As Object, e As EventArgs) Handles btnInvoiceExportControl.Click
+        Dim frm As New InvoiceSystemESH.frmInvoiceExportControl
+        SetUserInfo(frm.UserInfo)
+        frm.Show()
+    End Sub
+
 #End Region
 
 #Region "6.Shipping"
