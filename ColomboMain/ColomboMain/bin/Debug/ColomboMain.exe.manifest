@@ -432,13 +432,13 @@
       <dsig:DigestValue>ErSa/0GyAssnGorzcSKEwOyJu72/LW77660ua5oETaE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ColomboMain.exe.config" size="7339">
+  <file name="ColomboMain.exe.config" size="6972">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>sof26BzrzZGaLLYmtaRfq0XF35mkHVgYKbi5w788i5U=</dsig:DigestValue>
+      <dsig:DigestValue>qOztKOSW8gNWzy+6cU6feiuml1wrM1EodZxDVSu1QpA=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Logo-Colombo-Lace-Asia.ico" size="254558">
