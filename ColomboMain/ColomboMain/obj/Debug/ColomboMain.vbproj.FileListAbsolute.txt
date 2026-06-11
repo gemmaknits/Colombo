@@ -94,24 +94,8 @@ D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\RestSharp.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Sales Order System (Eschler).exe
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\STV.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Yarn Stock System (Eschler).exe
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Windows.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Base.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Windows.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.SpellChecker.Base.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EnvDTE.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Base.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Windows.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Base.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EPPlus.xml
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Newtonsoft.Json.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Windows.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Base.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Windows.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.SpellChecker.Base.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Base.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Shared.Windows.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Tools.Base.xml
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Syncfusion.Grid.Windows.XmlSerializers.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.AssemblyReference.cache
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.SuggestedBindingRedirects.cache
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.exe.config
@@ -130,6 +114,7 @@ D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.pdb
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.Shared.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportSource.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
@@ -141,8 +126,5 @@ D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportA
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportSource.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\FlashControlV71.dll
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\stdole.dll
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\ShockwaveFlashObjects.dll
+D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.frmTest.resources
