@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ColomboMain.exe" size="858624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ColomboMain.exe" size="859136">
       <assemblyIdentity name="ColomboMain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>RulMoBflNp4oqrw/3n+kSHVBV7zeH08C5hSU0TQJumg=</dsig:DigestValue>
+        <dsig:DigestValue>ISAf5Fks8kDWCxCqiZG6vs0r+8DdVqzpoV251VKStRI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
