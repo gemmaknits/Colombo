@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>CAAfifcDVr4G9RU6uBRrsfEZtwX5vSn99ei8APqsUmU=</dsig:DigestValue>
+        <dsig:DigestValue>HAz3ChfJ2iQoAM4qBezsl1sq3M7Q9C1fzE5oj5cVxq8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -319,14 +319,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Invoice System (Eschler).exe" size="2857984">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Invoice System (Eschler).exe" size="2846720">
       <assemblyIdentity name="Invoice System (Eschler)" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gGpT+Z6TSNQszJsgmB8vpgHFVLSWOkzqykganz8pNPk=</dsig:DigestValue>
+        <dsig:DigestValue>gz2a4sBwHbp0jZQ8Om332LHcPSj9l4/k/7QN10vLTBE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
