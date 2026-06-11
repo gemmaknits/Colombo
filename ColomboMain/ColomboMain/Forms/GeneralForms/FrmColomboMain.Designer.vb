@@ -91,6 +91,7 @@ Partial Class FrmColomboMain
         Me.btnRequestGreige = New System.Windows.Forms.Button()
         Me.btnGreigeOutDF = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnInvoiceExportControl = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.gbYarnStock.SuspendLayout()
@@ -130,7 +131,7 @@ Partial Class FrmColomboMain
         Me.tsbtnExit.Image = CType(resources.GetObject("tsbtnExit.Image"), System.Drawing.Image)
         Me.tsbtnExit.ImageTransparentColor = System.Drawing.Color.Magenta
         Me.tsbtnExit.Name = "tsbtnExit"
-        Me.tsbtnExit.Size = New System.Drawing.Size(45, 22)
+        Me.tsbtnExit.Size = New System.Drawing.Size(46, 22)
         Me.tsbtnExit.Text = "Exit"
         '
         'tsmnShowHideTreeMenu
@@ -571,6 +572,7 @@ Partial Class FrmColomboMain
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnInvoiceExportControl)
         Me.GroupBox3.Controls.Add(Me.btnDebitNote)
         Me.GroupBox3.Controls.Add(Me.btnInvoiceExport)
         Me.GroupBox3.Controls.Add(Me.btnCreditNote)
@@ -763,6 +765,15 @@ Partial Class FrmColomboMain
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 635)
         Me.TableLayoutPanel1.TabIndex = 91
         '
+        'btnInvoiceExportControl
+        '
+        Me.btnInvoiceExportControl.Location = New System.Drawing.Point(99, 103)
+        Me.btnInvoiceExportControl.Name = "btnInvoiceExportControl"
+        Me.btnInvoiceExportControl.Size = New System.Drawing.Size(83, 36)
+        Me.btnInvoiceExportControl.TabIndex = 14
+        Me.btnInvoiceExportControl.Text = "Inv. Exp Control"
+        Me.btnInvoiceExportControl.UseVisualStyleBackColor = True
+        '
         'FrmColomboMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -864,4 +875,5 @@ Partial Class FrmColomboMain
     Friend WithEvents btnStockMovement As Button
     Friend WithEvents btnCuttingInPurchase As Button
     Friend WithEvents btnCuttingInFromDOut As Button
+    Friend WithEvents btnInvoiceExportControl As Button
 End Class
