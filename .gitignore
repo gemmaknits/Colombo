@@ -1,14 +1,35 @@
 ﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+# Visual Studio
 ################################################################################
+
 .vs/
 bin/
 obj/
-*.vsidx
-*.cache
-*.7z
+
+# User-specific files
 *.user
 *.suo
-/ColomboMain/ColomboMain/.vs/
-/ColomboMain/ColomboMain/bin/
-/ColomboMain/ColomboMain/obj/
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+*.vsidx
+*.cache
+
+# ClickOnce
+publish/
+
+# NuGet
+packages/
+!packages/build/
+
+# ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Logs
+*.log
+
+# Compressed files
+*.7z
+*.zip

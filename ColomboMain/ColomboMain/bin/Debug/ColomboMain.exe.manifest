@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ColomboMain.exe" size="837632">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ColomboMain.exe" size="860672">
       <assemblyIdentity name="ColomboMain" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oOaw8HDC7uX6+dQmQDs57N/xDerRNY28wNTPxj0yP04=</dsig:DigestValue>
+        <dsig:DigestValue>hn4ml1PkXMDMstgXc+DPnMHq91NirXj5fRgnTmzoC58=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -432,13 +432,13 @@
       <dsig:DigestValue>ErSa/0GyAssnGorzcSKEwOyJu72/LW77660ua5oETaE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="ColomboMain.exe.config" size="6972">
+  <file name="ColomboMain.exe.config" size="7339">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>qOztKOSW8gNWzy+6cU6feiuml1wrM1EodZxDVSu1QpA=</dsig:DigestValue>
+      <dsig:DigestValue>sof26BzrzZGaLLYmtaRfq0XF35mkHVgYKbi5w788i5U=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Logo-Colombo-Lace-Asia.ico" size="254558">
