@@ -9,4 +9,6 @@ obj/
 *.7z
 *.user
 *.suo
-/ColomboMain/ColomboMain/bin/Debug/app.publish/ColomboMain.exe
+/ColomboMain/ColomboMain/.vs/
+/ColomboMain/ColomboMain/bin/
+/ColomboMain/ColomboMain/obj/
