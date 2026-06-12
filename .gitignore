@@ -2,9 +2,9 @@
 # Visual Studio
 ################################################################################
 
-.vs/
-bin/
-obj/
+**/bin/
+**/obj/
+**/.vs/
 
 # User-specific files
 *.user
@@ -18,6 +18,8 @@ obj/
 
 # ClickOnce
 publish/
+app.publish/
+**/app.publish/
 
 # NuGet
 packages/
