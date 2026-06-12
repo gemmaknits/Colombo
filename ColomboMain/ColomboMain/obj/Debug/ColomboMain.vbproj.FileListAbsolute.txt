@@ -97,8 +97,6 @@ D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Yarn Stock System (Eschl
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\EPPlus.xml
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\bin\Debug\Newtonsoft.Json.xml
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.AssemblyReference.cache
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.vbproj.SuggestedBindingRedirects.cache
-D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.exe.config
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.frmLogin.resources
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.FrmColomboMain.resources
 D:\SOURCECODE\Colombo\ColomboMain\ColomboMain\obj\Debug\ColomboMain.Resources.resources
