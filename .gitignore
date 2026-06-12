@@ -18,6 +18,8 @@
 
 # ClickOnce
 publish/
+app.publish/
+**/app.publish/
 
 # NuGet
 packages/
