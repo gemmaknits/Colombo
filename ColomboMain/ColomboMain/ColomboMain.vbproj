@@ -27,7 +27,7 @@
     <ProductName>Colombo Main</ProductName>
     <PublisherName>ColomboMain</PublisherName>
     <SuiteName>Colombo Business System</SuiteName>
-    <ApplicationRevision>140</ApplicationRevision>
+    <ApplicationRevision>141</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -143,6 +143,12 @@
     </Reference>
     <Reference Include="STV">
       <HintPath>Dll\STV.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base">
+      <HintPath>Dll\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.XlsIO.Base">
+      <HintPath>Dll\Syncfusion.XlsIO.Base.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
