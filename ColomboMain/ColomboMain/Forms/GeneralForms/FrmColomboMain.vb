@@ -1509,6 +1509,14 @@ Public Class FrmColomboMain
         frm.Show()
     End Sub
 
+    Private Sub btnProductionCLosed_Click(sender As Object, e As EventArgs) Handles btnProductionCLosed.Click
+        Dim frm As New ProductionSystem.frmKOClosed
+        SetUserInfo(frm.UserInfo)
+        frm.Show()
+    End Sub
+
+
+
 #End Region
 
 #Region "6.Shipping"

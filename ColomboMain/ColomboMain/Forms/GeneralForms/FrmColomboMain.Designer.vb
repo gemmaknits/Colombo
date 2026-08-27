@@ -33,6 +33,7 @@ Partial Class FrmColomboMain
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tslbDatabase = New System.Windows.Forms.ToolStripStatusLabel()
         Me.gbYarnStock = New System.Windows.Forms.GroupBox()
+        Me.btnProductionCLosed = New System.Windows.Forms.Button()
         Me.btnPrintYarnINDocument = New System.Windows.Forms.Button()
         Me.btnYarnInReturnProcess = New System.Windows.Forms.Button()
         Me.btnOperaionWarp = New System.Windows.Forms.Button()
@@ -73,6 +74,7 @@ Partial Class FrmColomboMain
         Me.btnStockMovement = New System.Windows.Forms.Button()
         Me.btnStockOnhand = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnInvoiceExportControl = New System.Windows.Forms.Button()
         Me.btnDebitNote = New System.Windows.Forms.Button()
         Me.btnInvoiceExport = New System.Windows.Forms.Button()
         Me.btnCreditNote = New System.Windows.Forms.Button()
@@ -91,7 +93,6 @@ Partial Class FrmColomboMain
         Me.btnRequestGreige = New System.Windows.Forms.Button()
         Me.btnGreigeOutDF = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.btnInvoiceExportControl = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.gbYarnStock.SuspendLayout()
@@ -187,6 +188,15 @@ Partial Class FrmColomboMain
         Me.gbYarnStock.TabIndex = 10
         Me.gbYarnStock.TabStop = False
         Me.gbYarnStock.Text = "Yarn Stock"
+        '
+        'btnProductionCLosed
+        '
+        Me.btnProductionCLosed.Location = New System.Drawing.Point(146, 24)
+        Me.btnProductionCLosed.Name = "btnProductionCLosed"
+        Me.btnProductionCLosed.Size = New System.Drawing.Size(83, 34)
+        Me.btnProductionCLosed.TabIndex = 15
+        Me.btnProductionCLosed.Text = "Production Closed"
+        Me.btnProductionCLosed.UseVisualStyleBackColor = True
         '
         'btnPrintYarnINDocument
         '
@@ -542,6 +552,7 @@ Partial Class FrmColomboMain
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnProductionCLosed)
         Me.GroupBox4.Controls.Add(Me.btnStockMovement)
         Me.GroupBox4.Controls.Add(Me.btnStockOnhand)
         Me.GroupBox4.Controls.Add(Me.btnYarnStockBalance)
@@ -583,6 +594,15 @@ Partial Class FrmColomboMain
         Me.GroupBox3.TabIndex = 13
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Invoice"
+        '
+        'btnInvoiceExportControl
+        '
+        Me.btnInvoiceExportControl.Location = New System.Drawing.Point(99, 103)
+        Me.btnInvoiceExportControl.Name = "btnInvoiceExportControl"
+        Me.btnInvoiceExportControl.Size = New System.Drawing.Size(83, 36)
+        Me.btnInvoiceExportControl.TabIndex = 14
+        Me.btnInvoiceExportControl.Text = "Inv. Exp Control"
+        Me.btnInvoiceExportControl.UseVisualStyleBackColor = True
         '
         'btnDebitNote
         '
@@ -765,15 +785,6 @@ Partial Class FrmColomboMain
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 635)
         Me.TableLayoutPanel1.TabIndex = 91
         '
-        'btnInvoiceExportControl
-        '
-        Me.btnInvoiceExportControl.Location = New System.Drawing.Point(99, 103)
-        Me.btnInvoiceExportControl.Name = "btnInvoiceExportControl"
-        Me.btnInvoiceExportControl.Size = New System.Drawing.Size(83, 36)
-        Me.btnInvoiceExportControl.TabIndex = 14
-        Me.btnInvoiceExportControl.Text = "Inv. Exp Control"
-        Me.btnInvoiceExportControl.UseVisualStyleBackColor = True
-        '
         'FrmColomboMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -876,4 +887,5 @@ Partial Class FrmColomboMain
     Friend WithEvents btnCuttingInPurchase As Button
     Friend WithEvents btnCuttingInFromDOut As Button
     Friend WithEvents btnInvoiceExportControl As Button
+    Friend WithEvents btnProductionCLosed As Button
 End Class
