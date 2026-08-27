@@ -1515,6 +1515,18 @@ Public Class FrmColomboMain
         frm.Show()
     End Sub
 
+    Private Sub btnKIJobSummary_Click(sender As Object, e As EventArgs) Handles btnKIJobSummary.Click
+        Dim frm As New YarnStockSystem.formPrintKIJobSummary
+        SetUserInfo(frm.UserInfo)
+        frm.Show()
+    End Sub
+
+    Private Sub btnProdGreigeDeliveryControl_Click(sender As Object, e As EventArgs) Handles btnProdGreigeDeliveryControl.Click
+        Dim frm As New YarnStockSystem.formPrintKIGreigeDeliveryControl
+        SetUserInfo(frm.UserInfo)
+        frm.Show()
+    End Sub
+
 
 
 #End Region

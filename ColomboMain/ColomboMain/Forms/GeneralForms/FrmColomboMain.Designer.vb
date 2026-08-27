@@ -33,7 +33,6 @@ Partial Class FrmColomboMain
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tslbDatabase = New System.Windows.Forms.ToolStripStatusLabel()
         Me.gbYarnStock = New System.Windows.Forms.GroupBox()
-        Me.btnProductionCLosed = New System.Windows.Forms.Button()
         Me.btnPrintYarnINDocument = New System.Windows.Forms.Button()
         Me.btnYarnInReturnProcess = New System.Windows.Forms.Button()
         Me.btnOperaionWarp = New System.Windows.Forms.Button()
@@ -43,6 +42,7 @@ Partial Class FrmColomboMain
         Me.btnYarnOut = New System.Windows.Forms.Button()
         Me.btnJobYarn = New System.Windows.Forms.Button()
         Me.btnYarnInPurchase = New System.Windows.Forms.Button()
+        Me.btnProductionCLosed = New System.Windows.Forms.Button()
         Me.btnYarnStockBalance = New System.Windows.Forms.Button()
         Me.gbProduction = New System.Windows.Forms.GroupBox()
         Me.btnMachines = New System.Windows.Forms.Button()
@@ -93,6 +93,8 @@ Partial Class FrmColomboMain
         Me.btnRequestGreige = New System.Windows.Forms.Button()
         Me.btnGreigeOutDF = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnKIJobSummary = New System.Windows.Forms.Button()
+        Me.btnProdGreigeDeliveryControl = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.gbYarnStock.SuspendLayout()
@@ -189,15 +191,6 @@ Partial Class FrmColomboMain
         Me.gbYarnStock.TabStop = False
         Me.gbYarnStock.Text = "Yarn Stock"
         '
-        'btnProductionCLosed
-        '
-        Me.btnProductionCLosed.Location = New System.Drawing.Point(146, 24)
-        Me.btnProductionCLosed.Name = "btnProductionCLosed"
-        Me.btnProductionCLosed.Size = New System.Drawing.Size(83, 34)
-        Me.btnProductionCLosed.TabIndex = 15
-        Me.btnProductionCLosed.Text = "Production Closed"
-        Me.btnProductionCLosed.UseVisualStyleBackColor = True
-        '
         'btnPrintYarnINDocument
         '
         Me.btnPrintYarnINDocument.Location = New System.Drawing.Point(10, 187)
@@ -279,6 +272,15 @@ Partial Class FrmColomboMain
         Me.btnYarnInPurchase.TabIndex = 4
         Me.btnYarnInPurchase.Text = "Yarn In Purchase"
         Me.btnYarnInPurchase.UseVisualStyleBackColor = True
+        '
+        'btnProductionCLosed
+        '
+        Me.btnProductionCLosed.Location = New System.Drawing.Point(146, 24)
+        Me.btnProductionCLosed.Name = "btnProductionCLosed"
+        Me.btnProductionCLosed.Size = New System.Drawing.Size(83, 34)
+        Me.btnProductionCLosed.TabIndex = 15
+        Me.btnProductionCLosed.Text = "Production Closed"
+        Me.btnProductionCLosed.UseVisualStyleBackColor = True
         '
         'btnYarnStockBalance
         '
@@ -552,6 +554,8 @@ Partial Class FrmColomboMain
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnProdGreigeDeliveryControl)
+        Me.GroupBox4.Controls.Add(Me.btnKIJobSummary)
         Me.GroupBox4.Controls.Add(Me.btnProductionCLosed)
         Me.GroupBox4.Controls.Add(Me.btnStockMovement)
         Me.GroupBox4.Controls.Add(Me.btnStockOnhand)
@@ -785,6 +789,24 @@ Partial Class FrmColomboMain
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 635)
         Me.TableLayoutPanel1.TabIndex = 91
         '
+        'btnKIJobSummary
+        '
+        Me.btnKIJobSummary.Location = New System.Drawing.Point(146, 65)
+        Me.btnKIJobSummary.Name = "btnKIJobSummary"
+        Me.btnKIJobSummary.Size = New System.Drawing.Size(83, 34)
+        Me.btnKIJobSummary.TabIndex = 16
+        Me.btnKIJobSummary.Text = "Prod. Job Summary"
+        Me.btnKIJobSummary.UseVisualStyleBackColor = True
+        '
+        'btnProdGreigeDeliveryControl
+        '
+        Me.btnProdGreigeDeliveryControl.Location = New System.Drawing.Point(146, 103)
+        Me.btnProdGreigeDeliveryControl.Name = "btnProdGreigeDeliveryControl"
+        Me.btnProdGreigeDeliveryControl.Size = New System.Drawing.Size(83, 34)
+        Me.btnProdGreigeDeliveryControl.TabIndex = 17
+        Me.btnProdGreigeDeliveryControl.Text = "Prod. Greige Delivery Control"
+        Me.btnProdGreigeDeliveryControl.UseVisualStyleBackColor = True
+        '
         'FrmColomboMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -888,4 +910,6 @@ Partial Class FrmColomboMain
     Friend WithEvents btnCuttingInFromDOut As Button
     Friend WithEvents btnInvoiceExportControl As Button
     Friend WithEvents btnProductionCLosed As Button
+    Friend WithEvents btnKIJobSummary As Button
+    Friend WithEvents btnProdGreigeDeliveryControl As Button
 End Class
