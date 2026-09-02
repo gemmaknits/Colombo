@@ -93,9 +93,8 @@ Partial Class FrmColomboMain
         Me.btnRequestGreige = New System.Windows.Forms.Button()
         Me.btnGreigeOutDF = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.btnSoSummary = New System.Windows.Forms.Button()
-        Me.btnInvoiceSummary = New System.Windows.Forms.Button()
-        Me.btnInvoiceLocalControl = New System.Windows.Forms.Button()
+        Me.btnKIJobSummary = New System.Windows.Forms.Button()
+        Me.btnProdGreigeDeliveryControl = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.gbYarnStock.SuspendLayout()
@@ -556,6 +555,8 @@ Partial Class FrmColomboMain
         '
         'GroupBox4
         '
+        Me.GroupBox4.Controls.Add(Me.btnProdGreigeDeliveryControl)
+        Me.GroupBox4.Controls.Add(Me.btnKIJobSummary)
         Me.GroupBox4.Controls.Add(Me.btnProductionCLosed)
         Me.GroupBox4.Controls.Add(Me.btnStockMovement)
         Me.GroupBox4.Controls.Add(Me.btnStockOnhand)
@@ -791,32 +792,23 @@ Partial Class FrmColomboMain
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 635)
         Me.TableLayoutPanel1.TabIndex = 91
         '
-        'btnSoSummary
+        'btnKIJobSummary
         '
-        Me.btnSoSummary.Location = New System.Drawing.Point(105, 106)
-        Me.btnSoSummary.Name = "btnSoSummary"
-        Me.btnSoSummary.Size = New System.Drawing.Size(89, 34)
-        Me.btnSoSummary.TabIndex = 16
-        Me.btnSoSummary.Text = "S/O Summary"
-        Me.btnSoSummary.UseVisualStyleBackColor = True
+        Me.btnKIJobSummary.Location = New System.Drawing.Point(146, 65)
+        Me.btnKIJobSummary.Name = "btnKIJobSummary"
+        Me.btnKIJobSummary.Size = New System.Drawing.Size(83, 34)
+        Me.btnKIJobSummary.TabIndex = 16
+        Me.btnKIJobSummary.Text = "Prod. Job Summary"
+        Me.btnKIJobSummary.UseVisualStyleBackColor = True
         '
-        'btnInvoiceSummary
+        'btnProdGreigeDeliveryControl
         '
-        Me.btnInvoiceSummary.Location = New System.Drawing.Point(10, 141)
-        Me.btnInvoiceSummary.Name = "btnInvoiceSummary"
-        Me.btnInvoiceSummary.Size = New System.Drawing.Size(83, 34)
-        Me.btnInvoiceSummary.TabIndex = 17
-        Me.btnInvoiceSummary.Text = "Invoice Year Summary "
-        Me.btnInvoiceSummary.UseVisualStyleBackColor = True
-        '
-        'btnInvoiceLocalControl
-        '
-        Me.btnInvoiceLocalControl.Location = New System.Drawing.Point(10, 103)
-        Me.btnInvoiceLocalControl.Name = "btnInvoiceLocalControl"
-        Me.btnInvoiceLocalControl.Size = New System.Drawing.Size(83, 36)
-        Me.btnInvoiceLocalControl.TabIndex = 18
-        Me.btnInvoiceLocalControl.Text = "Inv. Local Control"
-        Me.btnInvoiceLocalControl.UseVisualStyleBackColor = True
+        Me.btnProdGreigeDeliveryControl.Location = New System.Drawing.Point(146, 103)
+        Me.btnProdGreigeDeliveryControl.Name = "btnProdGreigeDeliveryControl"
+        Me.btnProdGreigeDeliveryControl.Size = New System.Drawing.Size(83, 34)
+        Me.btnProdGreigeDeliveryControl.TabIndex = 17
+        Me.btnProdGreigeDeliveryControl.Text = "Prod. Greige Delivery Control"
+        Me.btnProdGreigeDeliveryControl.UseVisualStyleBackColor = True
         '
         'FrmColomboMain
         '
@@ -921,7 +913,6 @@ Partial Class FrmColomboMain
     Friend WithEvents btnCuttingInFromDOut As Button
     Friend WithEvents btnInvoiceExportControl As Button
     Friend WithEvents btnProductionCLosed As Button
-    Friend WithEvents btnSoSummary As Button
-    Friend WithEvents btnInvoiceSummary As Button
-    Friend WithEvents btnInvoiceLocalControl As Button
+    Friend WithEvents btnKIJobSummary As Button
+    Friend WithEvents btnProdGreigeDeliveryControl As Button
 End Class
