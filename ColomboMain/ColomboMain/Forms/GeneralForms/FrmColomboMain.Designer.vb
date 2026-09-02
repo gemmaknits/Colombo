@@ -33,7 +33,6 @@ Partial Class FrmColomboMain
         Me.StatusStrip1 = New System.Windows.Forms.StatusStrip()
         Me.tslbDatabase = New System.Windows.Forms.ToolStripStatusLabel()
         Me.gbYarnStock = New System.Windows.Forms.GroupBox()
-        Me.btnProductionCLosed = New System.Windows.Forms.Button()
         Me.btnPrintYarnINDocument = New System.Windows.Forms.Button()
         Me.btnYarnInReturnProcess = New System.Windows.Forms.Button()
         Me.btnOperaionWarp = New System.Windows.Forms.Button()
@@ -43,6 +42,7 @@ Partial Class FrmColomboMain
         Me.btnYarnOut = New System.Windows.Forms.Button()
         Me.btnJobYarn = New System.Windows.Forms.Button()
         Me.btnYarnInPurchase = New System.Windows.Forms.Button()
+        Me.btnProductionCLosed = New System.Windows.Forms.Button()
         Me.btnYarnStockBalance = New System.Windows.Forms.Button()
         Me.gbProduction = New System.Windows.Forms.GroupBox()
         Me.btnMachines = New System.Windows.Forms.Button()
@@ -93,6 +93,9 @@ Partial Class FrmColomboMain
         Me.btnRequestGreige = New System.Windows.Forms.Button()
         Me.btnGreigeOutDF = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btnSoSummary = New System.Windows.Forms.Button()
+        Me.btnInvoiceSummary = New System.Windows.Forms.Button()
+        Me.btnInvoiceLocalControl = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.gbYarnStock.SuspendLayout()
@@ -189,15 +192,6 @@ Partial Class FrmColomboMain
         Me.gbYarnStock.TabStop = False
         Me.gbYarnStock.Text = "Yarn Stock"
         '
-        'btnProductionCLosed
-        '
-        Me.btnProductionCLosed.Location = New System.Drawing.Point(146, 24)
-        Me.btnProductionCLosed.Name = "btnProductionCLosed"
-        Me.btnProductionCLosed.Size = New System.Drawing.Size(83, 34)
-        Me.btnProductionCLosed.TabIndex = 15
-        Me.btnProductionCLosed.Text = "Production Closed"
-        Me.btnProductionCLosed.UseVisualStyleBackColor = True
-        '
         'btnPrintYarnINDocument
         '
         Me.btnPrintYarnINDocument.Location = New System.Drawing.Point(10, 187)
@@ -279,6 +273,15 @@ Partial Class FrmColomboMain
         Me.btnYarnInPurchase.TabIndex = 4
         Me.btnYarnInPurchase.Text = "Yarn In Purchase"
         Me.btnYarnInPurchase.UseVisualStyleBackColor = True
+        '
+        'btnProductionCLosed
+        '
+        Me.btnProductionCLosed.Location = New System.Drawing.Point(146, 24)
+        Me.btnProductionCLosed.Name = "btnProductionCLosed"
+        Me.btnProductionCLosed.Size = New System.Drawing.Size(83, 34)
+        Me.btnProductionCLosed.TabIndex = 15
+        Me.btnProductionCLosed.Text = "Production Closed"
+        Me.btnProductionCLosed.UseVisualStyleBackColor = True
         '
         'btnYarnStockBalance
         '
@@ -368,6 +371,7 @@ Partial Class FrmColomboMain
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.btnSoSummary)
         Me.GroupBox2.Controls.Add(Me.btnColor)
         Me.GroupBox2.Controls.Add(Me.btnEndBuyer)
         Me.GroupBox2.Controls.Add(Me.btnAgent)
@@ -558,7 +562,7 @@ Partial Class FrmColomboMain
         Me.GroupBox4.Controls.Add(Me.btnYarnStockBalance)
         Me.GroupBox4.Location = New System.Drawing.Point(626, 4)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(404, 181)
+        Me.GroupBox4.Size = New System.Drawing.Size(238, 181)
         Me.GroupBox4.TabIndex = 14
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Report"
@@ -583,6 +587,8 @@ Partial Class FrmColomboMain
         '
         'GroupBox3
         '
+        Me.GroupBox3.Controls.Add(Me.btnInvoiceSummary)
+        Me.GroupBox3.Controls.Add(Me.btnInvoiceLocalControl)
         Me.GroupBox3.Controls.Add(Me.btnInvoiceExportControl)
         Me.GroupBox3.Controls.Add(Me.btnDebitNote)
         Me.GroupBox3.Controls.Add(Me.btnInvoiceExport)
@@ -785,6 +791,33 @@ Partial Class FrmColomboMain
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 635)
         Me.TableLayoutPanel1.TabIndex = 91
         '
+        'btnSoSummary
+        '
+        Me.btnSoSummary.Location = New System.Drawing.Point(105, 106)
+        Me.btnSoSummary.Name = "btnSoSummary"
+        Me.btnSoSummary.Size = New System.Drawing.Size(89, 34)
+        Me.btnSoSummary.TabIndex = 16
+        Me.btnSoSummary.Text = "S/O Summary"
+        Me.btnSoSummary.UseVisualStyleBackColor = True
+        '
+        'btnInvoiceSummary
+        '
+        Me.btnInvoiceSummary.Location = New System.Drawing.Point(10, 141)
+        Me.btnInvoiceSummary.Name = "btnInvoiceSummary"
+        Me.btnInvoiceSummary.Size = New System.Drawing.Size(83, 34)
+        Me.btnInvoiceSummary.TabIndex = 17
+        Me.btnInvoiceSummary.Text = "Invoice Year Summary "
+        Me.btnInvoiceSummary.UseVisualStyleBackColor = True
+        '
+        'btnInvoiceLocalControl
+        '
+        Me.btnInvoiceLocalControl.Location = New System.Drawing.Point(10, 103)
+        Me.btnInvoiceLocalControl.Name = "btnInvoiceLocalControl"
+        Me.btnInvoiceLocalControl.Size = New System.Drawing.Size(83, 36)
+        Me.btnInvoiceLocalControl.TabIndex = 18
+        Me.btnInvoiceLocalControl.Text = "Inv. Local Control"
+        Me.btnInvoiceLocalControl.UseVisualStyleBackColor = True
+        '
         'FrmColomboMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -888,4 +921,7 @@ Partial Class FrmColomboMain
     Friend WithEvents btnCuttingInFromDOut As Button
     Friend WithEvents btnInvoiceExportControl As Button
     Friend WithEvents btnProductionCLosed As Button
+    Friend WithEvents btnSoSummary As Button
+    Friend WithEvents btnInvoiceSummary As Button
+    Friend WithEvents btnInvoiceLocalControl As Button
 End Class

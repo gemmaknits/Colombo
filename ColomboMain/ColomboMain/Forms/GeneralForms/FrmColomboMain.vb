@@ -1515,6 +1515,18 @@ Public Class FrmColomboMain
         frm.Show()
     End Sub
 
+    Private Sub btnSoSummary_Click(sender As Object, e As EventArgs) Handles btnSoSummary.Click
+        callFrmStdParameterNotInPanel(New SalesOrderSystem.frmSalesOrderSummary)
+    End Sub
+
+    Private Sub btnInvoiceSummary_Click(sender As Object, e As EventArgs) Handles btnInvoiceSummary.Click
+        callFrmStdParameterNotInPanel(New SalesOrderSystem.frmInvoiceSummaryYear)
+    End Sub
+
+    Private Sub btnInvoiceLocalControl_Click(sender As Object, e As EventArgs) Handles btnInvoiceLocalControl.Click
+        callFrmStdParameterNotInPanel(New InvoiceSystemESH.frmInvoiceLocalControl)
+    End Sub
+
 
 
 #End Region
