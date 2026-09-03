@@ -1527,6 +1527,18 @@ Public Class FrmColomboMain
         frm.Show()
     End Sub
 
+    Private Sub btnInvoiceLocalControl_Click(sender As Object, e As EventArgs) Handles btnInvoiceLocalControl.Click
+        Dim frm As New InvoiceSystemESH.frmInvoiceLocalControl
+        SetUserInfo(frm.UserInfo)
+        frm.Show()
+    End Sub
+
+    Private Sub btnSoSummary_Click(sender As Object, e As EventArgs) Handles btnSoSummary.Click
+        Dim frm As New SalesOrderSystem.frmSalesOrderSummary
+        SetUserInfo(frm.UserInfo)
+        frm.Show()
+    End Sub
+
 
 
 #End Region
