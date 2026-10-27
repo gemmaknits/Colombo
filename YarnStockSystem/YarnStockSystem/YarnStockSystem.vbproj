@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3E0A843B-EA6E-47EB-9206-F038E1560E09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>YarnStockSystem.My.MyApplication</StartupObject>
+    <RootNamespace>YarnStockSystem</RootNamespace>
+    <AssemblyName>Yarn Stock System %28Eschler%29</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\srv-gemmaknits\eschler_programs\YarnStockSystem\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\srv-gemmaknits\eschler_programs\YarnStockSystem\</InstallUrl>
+    <UpdateUrl>\\srv-gemmaknits\eschler_programs\YarnStockSystem\</UpdateUrl>
+    <ProductName>Yarn Stock System %28Eschler%29</ProductName>
+    <PublisherName>Eschler Knits Co., Ltd.</PublisherName>
+    <SuiteName>Eschler Program Suite</SuiteName>
+    <MinimumRequiredVersion>1.0.0.70</MinimumRequiredVersion>
+    <ApplicationRevision>531</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Yarn Stock System %28Eschler%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Yarn Stock System %28Eschler%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>94BBAC23B1FA751594392BD9D10DDC39662684BC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>YarnStockSystem_3_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>process.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Classes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Classes.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="myControls">
+      <HintPath>DLL\myControls.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="classDb\classConfig\clsConfig.vb" />
+    <Compile Include="classDb\classConnection\classConnectionEschlerDB.vb" />
+    <Compile Include="classDb\classDataGridViewCalendarcolumn\DataGridViewCalendarColumn.vb" />
+    <Compile Include="classDb\classJobOrderBarcode\classJobOrderBarcode.vb" />
+    <Compile Include="classDb\classJobOrderYarn\classJobOrderYarnSelectProductionLine.vb" />
+    <Compile Include="classDb\classJobOrderYarn\classJobOrderYarn.vb" />
+    <Compile Include="classDb\classLogin\classLogin.vb" />
+    <Compile Include="classDb\classMaster\classMaster.vb" />
+    <Compile Include="classDb\classMaster\classMasterUpdate.vb" />
+    <Compile Include="classDb\classSearch\classSearchYarnCodeFromBalance.vb" />
+    <Compile Include="classDb\classSearch\classSearchYarnLocationsGMK.vb" />
+    <Compile Include="classDb\classTable\tbl_Items.vb" />
+    <Compile Include="classDb\classTable\tbl_job.vb" />
+    <Compile Include="classDb\classTable\tbl_job_det.vb" />
+    <Compile Include="classDb\classTable\tbl_job_det_yarn.vb" />
+    <Compile Include="classDb\classTable\tbl_Num.vb" />
+    <Compile Include="classDb\classTable\tbl_Pur.vb" />
+    <Compile Include="classDb\classTable\tbl_Purdet.vb" />
+    <Compile Include="classDb\classTable\tbl_Supplier.vb" />
+    <Compile Include="classDb\classTable\tbl_Yarn_in.vb" />
+    <Compile Include="classDb\classTable\tbl_Yarn_in_det.vb" />
+    <Compile Include="classDb\classTable\tbl_Yarn_out.vb" />
+    <Compile Include="classDb\classTable\tbl_Yarn_out_det.vb" />
+    <Compile Include="classDb\classTable\v_yarnBalBybox.vb" />
+    <Compile Include="classDb\classTable\v_yarnOut.vb" />
+    <Compile Include="classDb\classUserInfo\classUserInfo.vb" />
+    <Compile Include="classDb\classYarnInEdit\classYarnInEdit.vb" />
+    <Compile Include="classDb\classYarnInProductionReturn\classYarnInProductionReturn.vb" />
+    <Compile Include="classDb\classYarnInPurchase\classYarnInPurchase.vb" />
+    <Compile Include="classDb\classYarnInReturn\classYarnInReturn.vb" />
+    <Compile Include="classDb\classYarnIN\classYarnIn.vb" />
+    <Compile Include="classDb\classYarnIN\classYarnInCustomerYarn.vb" />
+    <Compile Include="classDb\classYarnIN\classYarnINFromGemmaknit.vb" />
+    <Compile Include="classDb\classYarnIN\classYarnInPurchaseFromSupplier.vb" />
+    <Compile Include="classDb\classYarnIN\classYarnINYarnLocationsGMK.vb" />
+    <Compile Include="classDb\classYarnOut\classYarnOut.vb" />
+    <Compile Include="classDb\classYarnOut\classYarnOutBarcode.vb" />
+    <Compile Include="classDb\classYarnSPNew\GetDataYarn.vb" />
+    <Compile Include="classDb\classYarnSPNew\InsertYarn.vb" />
+    <Compile Include="classDb\classYarnSPNew\UpdateYarn.vb" />
+    <Compile Include="classDb\classYarnSPNew\YarnBOM.vb" />
+    <Compile Include="Component\ComponentCalendarEditingControl\componentCalendarEditingControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderYarnNewEditSelectProductionLine.Designer.vb">
+      <DependentUpon>formJobOrderYarnNewEditSelectProductionLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderYarnNewEditSelectProductionLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintWOConsumption.Designer.vb">
+      <DependentUpon>formPrintWOConsumption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintWOConsumption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintWOJobSummary.Designer.vb">
+      <DependentUpon>formPrintWOJobSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintWOJobSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintYarnScarp.Designer.vb">
+      <DependentUpon>formPrintYarnScarp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintYarnScarp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInPurchaseFromSupplier.Designer.vb">
+      <DependentUpon>formYarnInPurchaseFromSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInPurchaseFromSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\FormYarnOut.Designer.vb">
+      <DependentUpon>FormYarnOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\FormYarnOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInProductionReturn.Designer.vb">
+      <DependentUpon>formYarnInProductionReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInProductionReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderYarnNewEdit.Designer.vb">
+      <DependentUpon>formJobOrderYarnNewEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderYarnNewEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderforYarnApprove.Designer.vb">
+      <DependentUpon>formJobOrderforYarnApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderforYarnApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderforYarnCancel.Designer.vb">
+      <DependentUpon>formJobOrderforYarnCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formJobOrderforYarnCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmMainMenu.Designer.vb">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmMainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintBarcode.Designer.vb">
+      <DependentUpon>formPrintBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIConsumption.Designer.vb">
+      <DependentUpon>formPrintKIConsumption.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIConsumption.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIGreigeDeliveryControl.Designer.vb">
+      <DependentUpon>formPrintKIGreigeDeliveryControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIGreigeDeliveryControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIJobSummary.Designer.vb">
+      <DependentUpon>formPrintKIJobSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIJobSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIPending.Designer.vb">
+      <DependentUpon>formPrintKIPending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIPending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintYarnDemandForecast.Designer.vb">
+      <DependentUpon>formPrintYarnDemandForecast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintYarnDemandForecast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintYarnMoveByBox.Designer.vb">
+      <DependentUpon>formPrintYarnMoveByBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintYarnMoveByBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formSearchItemCode.Designer.vb">
+      <DependentUpon>formSearchItemCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formSearchItemCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formSearchItemCodeFromBalance.Designer.vb">
+      <DependentUpon>formSearchItemCodeFromBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formSearchItemCodeFromBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formSearchJob.designer.vb">
+      <DependentUpon>formSearchJob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formSearchJob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formSearchKI.Designer.vb">
+      <DependentUpon>formSearchKI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formSearchKI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formSearchYarn.Designer.vb">
+      <DependentUpon>formSearchYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formSearchYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formSearchYarnOut.Designer.vb">
+      <DependentUpon>formSearchYarnOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formSearchYarnOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInEdit_1.Designer.vb">
+      <DependentUpon>formYarnInEdit_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInEdit_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInReturn.Designer.vb">
+      <DependentUpon>formYarnInReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnInReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnIn_1.Designer.vb">
+      <DependentUpon>formYarnIn_1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnIn_1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnInPurchase.Designer.vb">
+      <DependentUpon>frmYarnInPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnInPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnLocation.Designer.vb">
+      <DependentUpon>formYarnLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnOutOld.Designer.vb">
+      <DependentUpon>formYarnOutOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnOutOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnOutCancel.Designer.vb">
+      <DependentUpon>formYarnOutCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnOutCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnOutEdit.Designer.vb">
+      <DependentUpon>formYarnOutEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnOutEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formYarnScrap.Designer.vb">
+      <DependentUpon>formYarnScrap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formYarnScrap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmEndingInventory.Designer.vb">
+      <DependentUpon>frmEndingInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmEndingInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmJobClose.Designer.vb">
+      <DependentUpon>frmJobClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmJobClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmJobOrderBarcode.Designer.vb">
+      <DependentUpon>frmJobOrderBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmJobOrderBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmSearchYarnTransferLocationsGMK.Designer.vb">
+      <DependentUpon>frmSearchYarnTransferLocationsGMK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmSearchYarnTransferLocationsGMK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmStockYarnAging.Designer.vb">
+      <DependentUpon>frmStockYarnAging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmStockYarnAging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnInCustomerYarn.Designer.vb">
+      <DependentUpon>frmYarnInCustomerYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnInCustomerYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnINFromGemmaknit.Designer.vb">
+      <DependentUpon>frmYarnINFromGemmaknit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnINFromGemmaknit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnINYarnLocationsGMK.Designer.vb">
+      <DependentUpon>frmYarnINYarnLocationsGMK.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnINYarnLocationsGMK.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnLostByKO.Designer.vb">
+      <DependentUpon>frmYarnLostByKO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnLostByKO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\DlgStockNonMovement.Designer.vb">
+      <DependentUpon>DlgStockNonMovement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\DlgStockNonMovement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmDeadStockBalanceYarn.Designer.vb">
+      <DependentUpon>frmDeadStockBalanceYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmDeadStockBalanceYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmKIConsumptionAndLoss.Designer.vb">
+      <DependentUpon>frmKIConsumptionAndLoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmKIConsumptionAndLoss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmRawBeamYarnCompareBalance.Designer.vb">
+      <DependentUpon>frmRawBeamYarnCompareBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmRawBeamYarnCompareBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmPrintWOClosed.Designer.vb">
+      <DependentUpon>frmPrintWOClosed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmPrintWOClosed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmPrintYarnInPurchased.Designer.vb">
+      <DependentUpon>frmPrintYarnInPurchased.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmPrintYarnInPurchased.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnOutBarcode.Designer.vb">
+      <DependentUpon>frmYarnOutBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmYarnOutBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIConsumption2.Designer.vb">
+      <DependentUpon>formPrintKIConsumption2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\formPrintKIConsumption2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintJobOrderforYarn.Designer.vb">
+      <DependentUpon>frmPrintJobOrderforYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintJobOrderforYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintYarnInDocument.Designer.vb">
+      <DependentUpon>frmPrintYarnInDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintYarnInDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintYarnLatestPrice.Designer.vb">
+      <DependentUpon>frmPrintYarnLatestPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintYarnLatestPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintYarnOutDocument.Designer.vb">
+      <DependentUpon>frmPrintYarnOutDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Yarnform\frmPrintYarnOutDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\formCRViewer.Designer.vb">
+      <DependentUpon>formCRViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\formCRViewer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptBarcode.Designer.vb">
+      <DependentUpon>FormRptBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptJobOrderforYarn.Designer.vb">
+      <DependentUpon>FormRptJobOrderforYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptJobOrderforYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptMachineUsage.Designer.vb">
+      <DependentUpon>FormRptMachineUsage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptMachineUsage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\formRptYarnBalance.Designer.vb">
+      <DependentUpon>formRptYarnBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\formRptYarnBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnIn.Designer.vb">
+      <DependentUpon>FormRptYarnIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnOut.Designer.vb">
+      <DependentUpon>FormRptYarnOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnPurchase.Designer.vb">
+      <DependentUpon>FormRptYarnPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnUsedByMonth.Designer.vb">
+      <DependentUpon>FormRptYarnUsedByMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\FormRptYarnUsedByMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmCompanySticker.Designer.vb">
+      <DependentUpon>frmCompanySticker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmCompanySticker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmYarnOnTime.Designer.vb">
+      <DependentUpon>frmYarnOnTime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmYarnOnTime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YarnReport\frmYarnUsedByYear.Designer.vb">
+      <DependentUpon>frmYarnUsedByYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="YarnReport\frmYarnUsedByYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formJobOrderYarnNewEditSelectProductionLine.resx">
+      <DependentUpon>formJobOrderYarnNewEditSelectProductionLine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintKIConsumption2.resx">
+      <DependentUpon>formPrintKIConsumption2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintWOConsumption.resx">
+      <DependentUpon>formPrintWOConsumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintWOJobSummary.resx">
+      <DependentUpon>formPrintWOJobSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintYarnScarp.resx">
+      <DependentUpon>formPrintYarnScarp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnInProductionReturn.resx">
+      <DependentUpon>formYarnInProductionReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formJobOrderYarnNewEdit.resx">
+      <DependentUpon>formJobOrderYarnNewEdit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formJobOrderforYarnApprove.resx">
+      <DependentUpon>formJobOrderforYarnApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formJobOrderforYarnCancel.resx">
+      <DependentUpon>formJobOrderforYarnCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmMainMenu.resx">
+      <DependentUpon>frmMainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintBarcode.resx">
+      <DependentUpon>formPrintBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintKIConsumption.resx">
+      <DependentUpon>formPrintKIConsumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintKIGreigeDeliveryControl.resx">
+      <DependentUpon>formPrintKIGreigeDeliveryControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintKIJobSummary.resx">
+      <DependentUpon>formPrintKIJobSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintKIPending.resx">
+      <DependentUpon>formPrintKIPending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintYarnDemandForecast.resx">
+      <DependentUpon>formPrintYarnDemandForecast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formPrintYarnMoveByBox.resx">
+      <DependentUpon>formPrintYarnMoveByBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formSearchItemCode.resx">
+      <DependentUpon>formSearchItemCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formSearchItemCodeFromBalance.resx">
+      <DependentUpon>formSearchItemCodeFromBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formSearchJob.resx">
+      <DependentUpon>formSearchJob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formSearchKI.resx">
+      <DependentUpon>formSearchKI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formSearchYarn.resx">
+      <DependentUpon>formSearchYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formSearchYarnOut.resx">
+      <DependentUpon>formSearchYarnOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnInEdit_1.resx">
+      <DependentUpon>formYarnInEdit_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnInPurchaseFromSupplier.resx">
+      <DependentUpon>formYarnInPurchaseFromSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnInReturn.resx">
+      <DependentUpon>formYarnInReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnIn_1.resx">
+      <DependentUpon>formYarnIn_1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmYarnInPurchase.resx">
+      <DependentUpon>frmYarnInPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnLocation.resx">
+      <DependentUpon>formYarnLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnOutOld.resx">
+      <DependentUpon>formYarnOutOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnOutCancel.resx">
+      <DependentUpon>formYarnOutCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnOutEdit.resx">
+      <DependentUpon>formYarnOutEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\FormYarnOut.resx">
+      <DependentUpon>FormYarnOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\formYarnScrap.resx">
+      <DependentUpon>formYarnScrap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmEndingInventory.resx">
+      <DependentUpon>frmEndingInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmJobClose.resx">
+      <DependentUpon>frmJobClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmJobOrderBarcode.resx">
+      <DependentUpon>frmJobOrderBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmSearchYarnTransferLocationsGMK.resx">
+      <DependentUpon>frmSearchYarnTransferLocationsGMK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmStockYarnAging.resx">
+      <DependentUpon>frmStockYarnAging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmYarnInCustomerYarn.resx">
+      <DependentUpon>frmYarnInCustomerYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmYarnINFromGemmaknit.resx">
+      <DependentUpon>frmYarnINFromGemmaknit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmYarnINYarnLocationsGMK.resx">
+      <DependentUpon>frmYarnINYarnLocationsGMK.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmYarnLostByKO.resx">
+      <DependentUpon>frmYarnLostByKO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmYarnOutBarcode.resx">
+      <DependentUpon>frmYarnOutBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmPrintJobOrderforYarn.resx">
+      <DependentUpon>frmPrintJobOrderforYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmPrintYarnInDocument.resx">
+      <DependentUpon>frmPrintYarnInDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmPrintYarnLatestPrice.resx">
+      <DependentUpon>frmPrintYarnLatestPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Yarnform\frmPrintYarnOutDocument.resx">
+      <DependentUpon>frmPrintYarnOutDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\DlgStockNonMovement.resx">
+      <DependentUpon>DlgStockNonMovement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\formCRViewer.resx">
+      <DependentUpon>formCRViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptBarcode.resx">
+      <DependentUpon>FormRptBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptJobOrderforYarn.resx">
+      <DependentUpon>FormRptJobOrderforYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptMachineUsage.resx">
+      <DependentUpon>FormRptMachineUsage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\formRptYarnBalance.resx">
+      <DependentUpon>formRptYarnBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptYarnIn.resx">
+      <DependentUpon>FormRptYarnIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptYarnOut.resx">
+      <DependentUpon>FormRptYarnOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptYarnPurchase.resx">
+      <DependentUpon>FormRptYarnPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\FormRptYarnUsedByMonth.resx">
+      <DependentUpon>FormRptYarnUsedByMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmCompanySticker.resx">
+      <DependentUpon>frmCompanySticker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmDeadStockBalanceYarn.resx">
+      <DependentUpon>frmDeadStockBalanceYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmKIConsumptionAndLoss.resx">
+      <DependentUpon>frmKIConsumptionAndLoss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmRawBeamYarnCompareBalance.resx">
+      <DependentUpon>frmRawBeamYarnCompareBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmPrintWOClosed.resx">
+      <DependentUpon>frmPrintWOClosed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmPrintYarnInPurchased.resx">
+      <DependentUpon>frmPrintYarnInPurchased.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmYarnOnTime.resx">
+      <DependentUpon>frmYarnOnTime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YarnReport\frmYarnUsedByYear.resx">
+      <DependentUpon>frmYarnUsedByYear.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="YarnStockSystem_1_TemporaryKey.pfx" />
+    <None Include="YarnStockSystem_2_TemporaryKey.pfx" />
+    <None Include="YarnStockSystem_3_TemporaryKey.pfx" />
+    <None Include="YarnStockSystem_TemporaryKey.pfx" />
+    <None Include="YarnStockSystem_TemporaryKey_old.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{FE73BB80-53F4-4AD0-A5F9-6A0BCE662292}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="process.ico" />
+    <None Include="Resources\Exit_16x.png" />
+    <None Include="Resources\ConfirmButton_16x.png" />
+    <None Include="Resources\Search_16x1.png" />
+    <None Include="Resources\SelectNoItems_16x.png" />
+    <None Include="Resources\SelectAllItems_16x.png" />
+    <None Include="Resources\Cancel_16x.png" />
+    <None Include="Resources\Add_16x.png" />
+    <None Include="Resources\Print_16x.png" />
+    <None Include="Resources\EditWindow_16x.png" />
+    <None Include="Resources\NewTest_16x.png" />
+    <None Include="Resources\Search_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+</Project>

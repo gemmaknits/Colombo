@@ -1,0 +1,216 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Sales Order System (Eschler)
+</name>
+</assembly>
+<members>
+<member name="T:SalesOrderSystem.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.AddField_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.AddQuery_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ApplyCodeChanges_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ASX_Download_blue_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ASX_Upload_blue_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Cancel_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Checkmark_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ConfirmButton_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Copy_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.DeleteQuery_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.DeleteQuery_16x1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Document_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.EditQuery_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ExcelWorksheetView_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.ExcelWorksheetView_16x1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Exit_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Expand_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Filter_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.GenerateAllFromTemplate_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Print_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Save_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Search_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Search_16x1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Tag_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Tag_16x1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.Tag_16x2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:SalesOrderSystem.My.Resources.Resources.WriteToHistory_16x">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.MouseClickCancelEventArgs">
+ <summary>Drop-in stub for Syncfusion.Windows.Forms.Tools.MouseClickCancelEventArgs</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.GridFontInfo">
+ <summary>Drop-in stub for Syncfusion.Windows.Forms.Grid.GridFontInfo</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.GridQueryCellInfoEventArgs">
+ <summary>Drop-in stub for Syncfusion.Windows.Forms.Grid.GridQueryCellInfoEventArgs</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.GridCellInfo">
+ <summary>Holds a single cell value. Used by Model(row, col).CellValue.</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.ColsAccessor">
+ <summary>Tracks which columns (1-based) are hidden in the dropdown grid.</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.GridModelAccessor">
+ <summary>
+ Central model shared by both ListBox and GridListBox accessors.
+ </summary>
+</member>
+<member name="P:SalesOrderSystem.Controls.GridModelAccessor.Item(System.Int32,System.Int32)">
+ <summary>
+ 1-based row/col access. Row 1 = first data row.
+ Replicates: Model(SelectedIndex + 1, 3).CellValue
+ </summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.GridAccessor">
+ <summary>Intermediate accessor: .Grid.Model</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.GridListBox">
+ <summary>
+ Drop-in replacement for Syncfusion GridListBox.
+ Accessed via: TryCast(mcbo.ListControl, GridListBox)
+ </summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.ListBoxAccessor">
+ <summary>Accessor for mcbo.ListBox.Grid.Model</summary>
+</member>
+<member name="T:SalesOrderSystem.Controls.MultiColumnComboBox">
+ <summary>
+ Drop-in replacement for Syncfusion.Windows.Forms.Tools.MultiColumnComboBox.
+ Provides the same public API so existing code only needs to remove
+ Syncfusion imports and replace them with SalesOrderSystem.Controls.
+ </summary>
+</member>
+<member name="E:SalesOrderSystem.Controls.MultiColumnComboBox.DropDownCloseOnClick">
+ <summary>Fired when user selects an item (replaces Syncfusion DropDownCloseOnClick)</summary>
+</member>
+<member name="P:SalesOrderSystem.Controls.MultiColumnComboBox.ListControl">
+ <summary>
+ Returns the shared GridListBox.
+ Usage (unchanged from Syncfusion):
+   TryCast(mcbo.ListControl, GridListBox).Grid.Model.QueryCellInfo
+ </summary>
+</member>
+</members>
+</doc>

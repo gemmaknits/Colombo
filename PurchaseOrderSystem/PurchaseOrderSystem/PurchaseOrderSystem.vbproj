@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EE6B26EC-272B-4395-AEB1-C30E959A9A14}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PurchaseOrderSystem.My.MyApplication</StartupObject>
+    <RootNamespace>PurchaseOrderSystem</RootNamespace>
+    <AssemblyName>Purchase Order System %28Eschler%29</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>\\srv-gemmaknits\eschler_programs\PurchaseOrderSystem\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\srv-gemmaknits\eschler_programs\PurchaseOrderSystem\</InstallUrl>
+    <ProductName>Purchase Order System %28Eschler%29</ProductName>
+    <PublisherName>Eschler Knits Co., Ltd.</PublisherName>
+    <SuiteName>Eschler Program Suite</SuiteName>
+    <MinimumRequiredVersion>1.0.0.41</MinimumRequiredVersion>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>314</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Purchase Order System %28Eschler%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Optimize>true</Optimize>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Purchase Order System %28Eschler%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>D1EB1D64E9046E02E850B42F7AC598E7608CC04F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PurchaseOrderSystem_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PurchaseOrderSystem.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Classes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ProductionSystem\ProductionSystem\DLL\Classes.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.SHDocVw, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>DLL\Interop.SHDocVw.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="microsoft_vsavb, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\Dll\microsoft_vsavb.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft_VsaVb" />
+    <Import Include="SHDocVw" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\classConnection\classConnectionColomboDB.vb" />
+    <Compile Include="Controls\MultiColumnComboBox.vb" />
+    <Compile Include="Controls\NullableDateTimePicker.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\classConfig\clsConfig.vb" />
+    <Compile Include="Classes\classDataGridViewCalendarcolumn\classDataGridViewCalendarcolumn.vb" />
+    <Compile Include="Classes\classImage\classPhoto.vb" />
+    <Compile Include="Classes\classItems\classItems.vb" />
+    <Compile Include="Classes\classListOfValue\classListOfValue.vb" />
+    <Compile Include="Classes\classLogin\classLogin.vb" />
+    <Compile Include="Classes\classMaster\classMaster.vb" />
+    <Compile Include="Classes\classMaster\classMasterUpdate.vb" />
+    <Compile Include="Classes\classProduction\classProduction.vb" />
+    <Compile Include="Classes\classPurchase\classPurchase.vb" />
+    <Compile Include="Classes\classPurchase\classPurchase1.vb" />
+    <Compile Include="Classes\classPurchase\classPurchaseEdit.vb" />
+    <Compile Include="Classes\classPurchase\classPurchaseNewEdit.vb" />
+    <Compile Include="Classes\classSearchPO\classSearchPO.vb" />
+    <Compile Include="Classes\classSelect\classSelectItems.vb" />
+    <Compile Include="Classes\classSelect\classSelectMtlSubInventory.vb" />
+    <Compile Include="Classes\classSelect\classSelectMtlWareHouse.vb" />
+    <Compile Include="Classes\classSelect\classSelectProductionOrderLines.vb" />
+    <Compile Include="Classes\classSelect\classSelectSo.vb" />
+    <Compile Include="Classes\classSelect\classSelectSoItm.vb" />
+    <Compile Include="Classes\classSuppliers\classSuppliers.vb" />
+    <Compile Include="Classes\classYarnMaster\classYarnMaster.vb" />
+    <Compile Include="FormListOfValues\frmListOfValues.Designer.vb">
+      <DependentUpon>frmListOfValues.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormListOfValues\frmListOfValues.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectSO.Designer.vb">
+      <DependentUpon>frmSelectSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\classTable\tbl_Items.vb" />
+    <Compile Include="Classes\classTable\tbl_job.vb" />
+    <Compile Include="Classes\classTable\tbl_job_det.vb" />
+    <Compile Include="Classes\classTable\tbl_job_det_yarn.vb" />
+    <Compile Include="Classes\classTable\tbl_Suppliers.vb" />
+    <Compile Include="Classes\classUserInfo\classUserInfo.vb" />
+    <Compile Include="Classes\classYarnSPNew\GetDataYarn.vb" />
+    <Compile Include="Classes\classYarnSPNew\InsertYarn.vb" />
+    <Compile Include="Component\ComponentCalendarEditingControl\ComponentCalendarEditingControl.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectItems.Designer.vb">
+      <DependentUpon>frmSelectItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectMtlSubinventory.Designer.vb">
+      <DependentUpon>frmSelectMtlSubinventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectMtlSubinventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectMtlWareHouse.Designer.vb">
+      <DependentUpon>frmSelectMtlWareHouse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectMtlWareHouse.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectProductionOrderLinesHeader.Designer.vb">
+      <DependentUpon>frmSelectProductionOrderLinesHeader.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectProductionOrderLinesHeader.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectSOItm.Designer.vb">
+      <DependentUpon>frmSelectSOItm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelect\frmSelectSOItm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\frmMainmenu.Designer.vb">
+      <DependentUpon>frmMainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\frmMainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\frmSplashScreen.Designer.vb">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForms\frmSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForms\TaskBarNotifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForms\frmPriceList.Designer.vb">
+      <DependentUpon>frmPriceList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForms\frmPriceList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForms\frmViewImage.Designer.vb">
+      <DependentUpon>frmViewImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForms\frmViewImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MediaForm\frmImagesDocAttachments.Designer.vb">
+      <DependentUpon>frmImagesDocAttachments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MediaForm\frmImagesDocAttachments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderCreate.Designer.vb">
+      <DependentUpon>formPurchaseOrderCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPrintPO.Designer.vb">
+      <DependentUpon>frmPrintPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPrintPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPurchaseOrderNewEdit.Designer.vb">
+      <DependentUpon>frmPurchaseOrderNewEdit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPurchaseOrderNewEdit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmRptYarnMaster.Designer.vb">
+      <DependentUpon>frmRptYarnMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmRptYarnMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPOPaid.Designer.vb">
+      <DependentUpon>frmPOPaid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPOPaid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit6.Designer.vb">
+      <DependentUpon>formPurchaseOrderEdit6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit4.Designer.vb">
+      <DependentUpon>formPurchaseOrderEdit4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\FormPurchaseOrderEdit5.Designer.vb">
+      <DependentUpon>FormPurchaseOrderEdit5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\FormPurchaseOrderEdit5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchYarnCode.Designer.vb">
+      <DependentUpon>formSearchYarnCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchYarnCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit3.Designer.vb">
+      <DependentUpon>formPurchaseOrderEdit3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formItemMaster.Designer.vb">
+      <DependentUpon>formItemMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formItemMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formJobOrderforYarn.Designer.vb">
+      <DependentUpon>formJobOrderforYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formJobOrderforYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderApprove.Designer.vb">
+      <DependentUpon>formPurchaseOrderApprove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderApprove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderCancel.Designer.vb">
+      <DependentUpon>formPurchaseOrderCancel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderCancel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit2.Designer.vb">
+      <DependentUpon>formPurchaseOrderEdit2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formPurchaseOrderEdit2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchItemCode.designer.vb">
+      <DependentUpon>formSearchItemCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchItemCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchPO.Designer.vb">
+      <DependentUpon>formSearchPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchSO.Designer.vb">
+      <DependentUpon>formSearchSO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formSearchSO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formSupplierCreate.Designer.vb">
+      <DependentUpon>formSupplierCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formSupplierCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\formYarnMaster.Designer.vb">
+      <DependentUpon>formYarnMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\formYarnMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPOClose.Designer.vb">
+      <DependentUpon>frmPOClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPOClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPurchaseOrderEditBOI.Designer.vb">
+      <DependentUpon>frmPurchaseOrderEditBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\frmPurchaseOrderEditBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseForms\frmSearchPO2.Designer.vb">
+      <DependentUpon>frmSearchPO2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseForms\frmSearchPO2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\formPOHistoryReport.Designer.vb">
+      <DependentUpon>formPOHistoryReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\formPOHistoryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOALLPending.Designer.vb">
+      <DependentUpon>frmPOALLPending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOALLPending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOCalendar.Designer.vb">
+      <DependentUpon>frmPOCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOImportAnalysis.Designer.vb">
+      <DependentUpon>frmPOImportAnalysis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOImportAnalysis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOOntime.Designer.vb">
+      <DependentUpon>frmPOOntime.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOOntime.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOOntimeByYear.Designer.vb">
+      <DependentUpon>frmPOOntimeByYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOOntimeByYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOReport.Designer.vb">
+      <DependentUpon>frmPOReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOYarnPending.Designer.vb">
+      <DependentUpon>frmPOYarnPending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOYarnPending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOYarnTest.Designer.vb">
+      <DependentUpon>frmPOYarnTest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPOYarnTest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPrintYarnLatestPrice.Designer.vb">
+      <DependentUpon>frmPrintYarnLatestPrice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmPrintYarnLatestPrice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReports\frmYarnOnhandCost.Designer.vb">
+      <DependentUpon>frmYarnOnhandCost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReports\frmYarnOnhandCost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormListOfValues\frmListOfValues.resx">
+      <DependentUpon>frmListOfValues.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect\frmSelectSO.resx">
+      <DependentUpon>frmSelectSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect\frmSelectItems.resx">
+      <DependentUpon>frmSelectItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect\frmSelectMtlSubinventory.resx">
+      <DependentUpon>frmSelectMtlSubinventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect\frmSelectMtlWareHouse.resx">
+      <DependentUpon>frmSelectMtlWareHouse.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect\frmSelectProductionOrderLinesHeader.resx">
+      <DependentUpon>frmSelectProductionOrderLinesHeader.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelect\frmSelectSOItm.resx">
+      <DependentUpon>frmSelectSOItm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\frmReport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\frmMainmenu.resx">
+      <DependentUpon>frmMainmenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForms\TaskBarNotifier.resx">
+      <DependentUpon>TaskBarNotifier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForms\frmPriceList.resx">
+      <DependentUpon>frmPriceList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForms\frmViewImage.resx">
+      <DependentUpon>frmViewImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MediaForm\frmImagesDocAttachments.resx">
+      <DependentUpon>frmImagesDocAttachments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderCreate.resx">
+      <DependentUpon>formPurchaseOrderCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\frmPrintPO.resx">
+      <DependentUpon>frmPrintPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\frmPurchaseOrderNewEdit.resx">
+      <DependentUpon>frmPurchaseOrderNewEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmRptYarnMaster.resx">
+      <DependentUpon>frmRptYarnMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\frmPOPaid.resx">
+      <DependentUpon>frmPOPaid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderEdit6.resx">
+      <DependentUpon>formPurchaseOrderEdit6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderEdit3.resx">
+      <DependentUpon>formPurchaseOrderEdit3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formItemMaster.resx">
+      <DependentUpon>formItemMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formJobOrderforYarn.resx">
+      <DependentUpon>formJobOrderforYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderApprove.resx">
+      <DependentUpon>formPurchaseOrderApprove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderCancel.resx">
+      <DependentUpon>formPurchaseOrderCancel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderEdit2.resx">
+      <DependentUpon>formPurchaseOrderEdit2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formPurchaseOrderEdit4.resx">
+      <DependentUpon>formPurchaseOrderEdit4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\FormPurchaseOrderEdit5.resx">
+      <DependentUpon>FormPurchaseOrderEdit5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formSearchItemCode.resx">
+      <DependentUpon>formSearchItemCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formSearchPO.resx">
+      <DependentUpon>formSearchPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formSearchSO.resx">
+      <DependentUpon>formSearchSO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formSearchYarnCode.resx">
+      <DependentUpon>formSearchYarnCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formSupplierCreate.resx">
+      <DependentUpon>formSupplierCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\formYarnMaster.resx">
+      <DependentUpon>formYarnMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\frmPOClose.resx">
+      <DependentUpon>frmPOClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\frmPurchaseOrderEditBOI.resx">
+      <DependentUpon>frmPurchaseOrderEditBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseForms\frmSearchPO2.resx">
+      <DependentUpon>frmSearchPO2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\formPOHistoryReport.resx">
+      <DependentUpon>formPOHistoryReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOALLPending.resx">
+      <DependentUpon>frmPOALLPending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOCalendar.resx">
+      <DependentUpon>frmPOCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOImportAnalysis.resx">
+      <DependentUpon>frmPOImportAnalysis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOOntime.resx">
+      <DependentUpon>frmPOOntime.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOOntimeByYear.resx">
+      <DependentUpon>frmPOOntimeByYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOReport.resx">
+      <DependentUpon>frmPOReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOYarnPending.resx">
+      <DependentUpon>frmPOYarnPending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPOYarnTest.resx">
+      <DependentUpon>frmPOYarnTest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmPrintYarnLatestPrice.resx">
+      <DependentUpon>frmPrintYarnLatestPrice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReports\frmYarnOnhandCost.resx">
+      <DependentUpon>frmYarnOnhandCost.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="PurchaseOrderSystem_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{FE73BB80-53F4-4AD0-A5F9-6A0BCE662292}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Classes.dll" />
+    <Content Include="PurchaseOrderSystem.ico" />
+    <None Include="Resources\None_16x.png" />
+    <None Include="Resources\Cancel_16x1.png" />
+    <None Include="Resources\Import_16x.png" />
+    <None Include="Resources\Minimize_16x.png" />
+    <None Include="Resources\NewItem_16x.png" />
+    <None Include="Resources\Exit_16x.png" />
+    <None Include="Resources\CloseDocument_16x.png" />
+    <None Include="Resources\ConfirmButton_16x1.png" />
+    <None Include="Resources\Cancel_16x.png" />
+    <None Include="Resources\Print_16x.png" />
+    <None Include="Resources\Save_16x.png" />
+    <None Include="Resources\Search_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualBasic.Vsa">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vsa">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Vsa.xml">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft_VsaVb">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Classes\classSearch\" />
+  </ItemGroup>
+</Project>

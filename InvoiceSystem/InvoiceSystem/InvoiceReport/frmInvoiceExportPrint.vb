@@ -1,0 +1,112 @@
+Public Class frmInvoiceExportPrint
+	Dim clsConn As New classConnection
+	Dim clsConfig As New clsConfig
+	Dim clsUser As New classUserInfo
+
+	Public Property UserInfo() As classUserInfo
+		Get
+			UserInfo = clsUser
+		End Get
+		Set(ByVal NewValue As classUserInfo)
+			clsUser = NewValue
+		End Set
+	End Property
+
+	Private Sub GenCombo()
+		Dim objDB As New classMaster
+		Dim objDB2 As New classInvoice
+		Dim dt As DataTable
+		dt = objDB.GetCustomer
+		Me.cboCustomer.DataSource = dt
+		Me.cboCustomer.DisplayMember = "name"
+		Me.cboCustomer.ValueMember = "custcd"
+
+		dt = objDB2.InvExpLoad
+		Me.cboInvNo.DataSource = dt
+        Me.cboInvNo.DisplayMember = "invnowithstat" '"invno"
+        Me.cboInvNo.ValueMember = "invid"
+		Me.cboInvNo.SelectedIndex = -1
+	End Sub
+
+	Private Sub FormInvoiceExportPrint_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+		Me.StartPosition = FormStartPosition.CenterScreen
+        dtpDateFr.Value = DateAdd(DateInterval.Year, -1, Now)
+		dtpDateTo.Value = Now
+		Call GenCombo()
+	End Sub
+
+	Private Sub btnPrint_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrint.Click
+        Const rptFileName = "rptInvExport.rpt"
+        If Not clsConfig.CheckReport(clsUser.ReportPath, rptFileName) Then Exit Sub
+		Dim frm As New frmReport
+		Dim rpt As New CrystalDecisions.CrystalReports.Engine.ReportDocument
+		Me.Cursor = Cursors.WaitCursor
+		rpt.Load(clsUser.ReportPath & rptFileName)
+		rpt.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperA4
+		rpt.DataSourceConnections.Item(0).SetConnection(clsConn.servername, clsConn.database, False)
+		rpt.DataSourceConnections.Item(0).SetLogon(clsConn.Userid, clsConn.Password)
+		rpt.VerifyDatabase()
+		rpt.SetParameterValue("@invid", clsConfig.IsNull(cboInvNo.SelectedValue, 0))
+		rpt.SetParameterValue("@invno", "")
+        If (New clsConfig).IsNull(cboInvNo.SelectedValue, 0) = 0 Then 'If user don't enter invoice no,this program will select data between dtpDatefr and dtpDateto
+            rpt.SetParameterValue("@datefr", dtpDateFr.Value.ToString("yyyyMMdd"))
+            rpt.SetParameterValue("@dateto", dtpDateTo.Value.ToString("yyyyMMdd"))
+        Else 'If user enter invoice no this program
+            rpt.SetParameterValue("@datefr", "19000101")
+            rpt.SetParameterValue("@dateto", Now.ToString("yyyyMMdd"))
+        End If
+        rpt.SetParameterValue("@custcd", cboCustomer.SelectedValue)
+		rpt.SetParameterValue("@for_cust", optYes.Checked)
+		rpt.SetParameterValue("@use_show_price", chkUseShowPrice.Checked)
+
+		rpt.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperA4
+		rpt.PrintOptions.PaperOrientation = CrystalDecisions.Shared.PaperOrientation.Portrait
+		rpt.PrintOptions.PaperSource = CrystalDecisions.Shared.PaperSource.Auto
+
+		frm.Title = "Export Invoice"
+        'frm.CRViewer.DisplayGroupTree = (cboInvNo.SelectedIndex < 0)
+        frm.CRViewer.ReportSource = rpt
+        frm.MdiParent = Me.ParentForm
+        frm.Show()
+        Me.Cursor = Cursors.Default
+    End Sub
+
+    Private Sub btnPrintPacking_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrintPacking.Click
+
+
+        Const rptFileName = "rptInvExportPacking.rpt"
+        If Not clsConfig.CheckReport(clsUser.ReportPath, rptFileName) Then Exit Sub
+        Dim frm As New frmReport
+        Dim rpt As New CrystalDecisions.CrystalReports.Engine.ReportDocument
+        Me.Cursor = Cursors.WaitCursor
+        rpt.Load(clsUser.ReportPath & rptFileName)
+        rpt.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperA4
+        rpt.DataSourceConnections.Item(0).SetConnection(clsConn.servername, clsConn.database, False)
+        rpt.DataSourceConnections.Item(0).SetLogon(clsConn.Userid, clsConn.Password)
+        rpt.VerifyDatabase()
+        rpt.SetParameterValue("@invid", clsConfig.IsNull(cboInvNo.SelectedValue, 0))
+        rpt.SetParameterValue("@invno", "")
+        rpt.SetParameterValue("@datefr", dtpDateFr.Value.ToString("yyyyMMdd"))
+        rpt.SetParameterValue("@dateto", dtpDateTo.Value.ToString("yyyyMMdd"))
+        rpt.SetParameterValue("@custcd", cboCustomer.SelectedValue)
+
+        rpt.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperA4
+        rpt.PrintOptions.PaperOrientation = CrystalDecisions.Shared.PaperOrientation.Portrait
+        rpt.PrintOptions.PaperSource = CrystalDecisions.Shared.PaperSource.Auto
+
+        frm.Title = "Export Invoice Packing List"
+        'frm.CRViewer.DisplayGroupTree = (cboInvNo.SelectedIndex < 0)
+        frm.CRViewer.ReportSource = rpt
+        frm.MdiParent = Me.ParentForm
+        frm.Show()
+        Me.Cursor = Cursors.Default
+    End Sub
+
+	Private Sub btnMinimized_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnMinimized.Click
+		Me.WindowState = FormWindowState.Minimized
+	End Sub
+
+	Private Sub btnExit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnExit.Click
+		Me.Dispose()
+	End Sub
+End Class

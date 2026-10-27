@@ -1,0 +1,2762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{436B925F-DEA5-48D6-9B49-3A909588F7A9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SalesOrderSystem.My.MyApplication</StartupObject>
+    <RootNamespace>SalesOrderSystem</RootNamespace>
+    <AssemblyName>Sales Order System %28Eschler%29</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\srv-gemmaknits\eschler_programs\SalesOrderSystem\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>\\srv-gemmaknits\eschler_programs\SalesOrderSystem\</InstallUrl>
+    <TargetCulture>en</TargetCulture>
+    <ProductName>Sales Order System %28Eschler%29</ProductName>
+    <PublisherName>Eschler Knits Co., Ltd.</PublisherName>
+    <SuiteName>Eschler Program Suite</SuiteName>
+    <MinimumRequiredVersion>1.0.0.158</MinimumRequiredVersion>
+    <WebPage>publish.htm</WebPage>
+    <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
+    <ApplicationRevision>1063</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>\\srv-gemmaknits\ESCHLER_PROGRAMS\MSI</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sales Order System %28Eschler%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sales Order System %28Eschler%29.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FC23247B42AA4A5EBCE01C62B77A2FF1F0A0329A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SalesOrderSystem_2_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>kdf.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Classes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\Classes.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="EPPlus, Version=7.7.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.7.7.3\lib\net35\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=8.1.0.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.8.1.0\lib\net35\EPPlus.Interfaces.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=7.7.0.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.7.7.0\lib\net35\EPPlus.System.Drawing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.SHDocVw">
+      <HintPath>DLL\Interop.SHDocVw.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PPTC %28Eschler%29">
+      <HintPath>Exe\PPTC (Eschler).exe</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Production System %28Eschler%29">
+      <HintPath>Exe\Production System (Eschler).exe</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=104.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.104.4.0\lib\net4\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="STV, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dll\STV.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base, Version=22.1451.34.0, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Compression.Base.22.1.34\lib\net451\Syncfusion.Compression.Base.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Grid.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Grid.Windows, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Licensing, Version=27.2450.5.0, Culture=neutral, PublicKeyToken=632609b4d040f6b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Licensing.27.2.5\lib\net45\Syncfusion.Licensing.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Shared.Windows, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.SpellChecker.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Base, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89" />
+    <Reference Include="Syncfusion.Tools.Windows, Version=14.4400.0.20, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL" />
+    <Reference Include="Syncfusion.XlsIO.Base, Version=20.4450.0.38, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Syncfusion.XlsIO.WinForms.22.1.34\lib\net40\Syncfusion.XlsIO.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.services" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CrystalDecisions.CrystalReports.ViewerObjectModel" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Classes\classCheckBox\classCheckbox.vb" />
+    <Compile Include="Classes\classCMR\ClassCMR.vb" />
+    <Compile Include="Classes\classColors\classColors.vb" />
+    <Compile Include="Classes\classConfig\clsConfig.vb" />
+    <Compile Include="Classes\classConnection\classConnectionEschlerDB.vb" />
+    <Compile Include="Classes\classSTOrderClosing\classSTOrderClosingBLL.vb" />
+    <Compile Include="Classes\classCustomers\classCustomers.vb" />
+    <Compile Include="Classes\classCuttingIN\classCuttingIN.vb" />
+    <Compile Include="Classes\classDFOrder\classDFOrder.vb" />
+    <Compile Include="Classes\ClassDIN\classDINManual.vb" />
+    <Compile Include="Classes\classDyedOut\classDyedOutFromRequest.vb" />
+    <Compile Include="Classes\classDyedOut\classDyedOutFromStock.vb" />
+    <Compile Include="Classes\classDyedOut\classDyedOutSample.vb" />
+    <Compile Include="Classes\classDyedOut\classDyedOutSampleBarcode.vb" />
+    <Compile Include="Classes\classEndingInventory\ClassEndingDyedInventory.vb" />
+    <Compile Include="Classes\classEndingInventory\classEndingGreigeInventory.vb" />
+    <Compile Include="Classes\classEndingInventory\classEndingYarnInventory.vb" />
+    <Compile Include="Classes\classGridLayoutSettings\classGridLayoutSettings.vb" />
+    <Compile Include="Classes\classHanger\classHangerINBarcode.vb" />
+    <Compile Include="Classes\classHanger\classHangerOutBarcode.vb" />
+    <Compile Include="Classes\classHanger\classHangerReturnBarcode.vb" />
+    <Compile Include="Classes\classInvoice\classInvoice.vb" />
+    <Compile Include="Classes\classLab\classLab.vb" />
+    <Compile Include="Classes\classLocation\classStockTransferD.vb" />
+    <Compile Include="Classes\classLocation\classYarnLocation.vb" />
+    <Compile Include="Classes\classLogin\classLogin.vb" />
+    <Compile Include="Classes\classMaster\classMaster.vb" />
+    <Compile Include="Classes\classMaster\ClassMasterSearchDialog.vb" />
+    <Compile Include="Classes\classMaster\classMasterUpdate.vb" />
+    <Compile Include="Classes\classMould\Mould.vb" />
+    <Compile Include="Classes\classPackingListD\classPackingListD.vb" />
+    <Compile Include="Classes\classPackingListG\classPackingListG.vb" />
+    <Compile Include="Classes\classProduction\classProduction.vb" />
+    <Compile Include="Classes\classRandD\classRandD.vb" />
+    <Compile Include="Classes\classRequest\classRequest.vb" />
+    <Compile Include="Classes\classSaleQuote\classSaleOrderEnterCustPo.vb" />
+    <Compile Include="Classes\classSaleQuote\classSaleOrderEnterCustPoUnique.vb" />
+    <Compile Include="Classes\classSaleQuote\classSalesQuote.vb" />
+    <Compile Include="Classes\classSalesOrder\classSalesOrder.vb" />
+    <Compile Include="Classes\classPackingList\classPLD.vb" />
+    <Compile Include="Classes\classPackingList\classPLG.vb" />
+    <Compile Include="Classes\classSearch\classDyedOutSampleSearchPLS.vb" />
+    <Compile Include="Classes\classSearch\classSeachPO.vb" />
+    <Compile Include="Classes\classSearch\classSearchCustomers.vb" />
+    <Compile Include="Classes\classSearch\classSearchCustomersParent.vb" />
+    <Compile Include="Classes\classSearch\classSearchDFOrder.vb" />
+    <Compile Include="Classes\classSearch\classSearchDIN.vb" />
+    <Compile Include="Classes\classSearch\classSearchDOUT.vb" />
+    <Compile Include="Classes\classSearch\classSearchGIN.vb" />
+    <Compile Include="Classes\classSearch\classSearchGOUT.vb" />
+    <Compile Include="Classes\classSearch\classSearchLOT.vb" />
+    <Compile Include="Classes\classSearch\classSearchPDF.vb" />
+    <Compile Include="Classes\classSearch\classSearchREQD.vb" />
+    <Compile Include="Classes\classStock\ClassGOUTFromREQ.vb" />
+    <Compile Include="Classes\classStock\classGreigeOutChangeDesign.vb" />
+    <Compile Include="Classes\classStock\classSampleGreigeStockIN.vb" />
+    <Compile Include="Classes\classStock\classStock.vb" />
+    <Compile Include="Classes\classStock\classCIN.vb" />
+    <Compile Include="Classes\classStock\classStockD.vb" />
+    <Compile Include="Classes\classStock\classStockDClearanceSale.vb" />
+    <Compile Include="Classes\classStock\classStockDINPurchase.vb" />
+    <Compile Include="Classes\classStock\classStockDINReturn.vb" />
+    <Compile Include="Classes\classStock\classStockDLocation.vb" />
+    <Compile Include="Classes\classStock\classStockG.vb" />
+    <Compile Include="Classes\classStock\classStockGIN_KOManual.vb" />
+    <Compile Include="Classes\classStock\classStockTransferG.vb" />
+    <Compile Include="Classes\classStock\classStockTransferY.vb" />
+    <Compile Include="Classes\classUserInfo\classUserInfo.vb" />
+    <Compile Include="Classes\classYarnSPNew\GetDataYarn.vb" />
+    <Compile Include="CuttingForm\frmCuttingIN.Designer.vb">
+      <DependentUpon>frmCuttingIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CuttingForm\frmCuttingIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\formDFApvSheet.Designer.vb">
+      <DependentUpon>formDFApvSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\formDFApvSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmBlankApvSheet.Designer.vb">
+      <DependentUpon>frmBlankApvSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmBlankApvSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrder.Designer.vb">
+      <DependentUpon>frmDyingOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderChange.Designer.vb">
+      <DependentUpon>frmDyingOrderChange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderChange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderClose.Designer.vb">
+      <DependentUpon>frmDyingOrderClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderSearch.Designer.vb">
+      <DependentUpon>frmDyingOrderSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderV01.designer.vb">
+      <DependentUpon>frmDyingOrderV01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderForm\frmDyingOrderV01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderClosing.Designer.vb">
+      <DependentUpon>frmDyingOrderClosing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderClosing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderDesignSearch.Designer.vb">
+      <DependentUpon>frmDyingOrderDesignSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderDesignSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderEvaluation.Designer.vb">
+      <DependentUpon>frmDyingOrderEvaluation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderEvaluation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderInvoiceControl.Designer.vb">
+      <DependentUpon>frmDyingOrderInvoiceControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderInvoiceControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderPending.Designer.vb">
+      <DependentUpon>frmDyingOrderPending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderPending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderPending2.Designer.vb">
+      <DependentUpon>frmDyingOrderPending2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderPending2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderPrint.Designer.vb">
+      <DependentUpon>frmDyingOrderPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderSummary.Designer.vb">
+      <DependentUpon>frmDyingOrderSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderWeight.Designer.vb">
+      <DependentUpon>frmDyingOrderWeight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderWeight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderWeight2.Designer.vb">
+      <DependentUpon>frmDyingOrderWeight2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmDyingOrderWeight2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmKOYarn.Designer.vb">
+      <DependentUpon>frmKOYarn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmKOYarn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmStockSampleAging.Designer.vb">
+      <DependentUpon>frmStockSampleAging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DyingOrderReport\frmStockSampleAging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GammaReport\frmCMRLabStatus.Designer.vb">
+      <DependentUpon>frmCMRLabStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GammaReport\frmCMRLabStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GammaReport\frmGammaDyePerformance.Designer.vb">
+      <DependentUpon>frmGammaDyePerformance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GammaReport\frmGammaDyePerformance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GammaReport\frmGemmaKnitsCMRControl.Designer.vb">
+      <DependentUpon>frmGemmaKnitsCMRControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GammaReport\frmGemmaKnitsCMRControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GammaReport\frmrptCMRList.Designer.vb">
+      <DependentUpon>frmrptCMRList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GammaReport\frmrptCMRList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmDesign.vb" />
+    <Compile Include="GeneralForm\frmGridLayoutSettings.Designer.vb">
+      <DependentUpon>frmGridLayoutSettings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmGridLayoutSettings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsForm\frmDyedTransfer.Designer.vb">
+      <DependentUpon>frmDyedTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsForm\frmDyedTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsForm\frmYarnLocation.Designer.vb">
+      <DependentUpon>frmYarnLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsForm\frmYarnLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsForm\frmYarnTransfer.Designer.vb">
+      <DependentUpon>frmYarnTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LocationsForm\frmYarnTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagementReport\frmManagementSummaryReport.Designer.vb">
+      <DependentUpon>frmManagementSummaryReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagementReport\frmManagementSummaryReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GammaReport\frmGammaDFControl.Designer.vb">
+      <DependentUpon>frmGammaDFControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GammaReport\frmGammaDFControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GammaReport\frmGemmaKnitsSOControl.Designer.vb">
+      <DependentUpon>frmGemmaKnitsSOControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GammaReport\frmGemmaKnitsSOControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmLogin.designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmMainmenu.Designer.vb">
+      <DependentUpon>frmMainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmMainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmReport.Designer.vb">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\frmSplashScreen.Designer.vb">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="GeneralForm\frmSplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GeneralForm\TaskBarNotifier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceExportControl.Designer.vb">
+      <DependentUpon>frmInvoiceExportControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceExportControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceExportControl2.Designer.vb">
+      <DependentUpon>frmInvoiceExportControl2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceExportControl2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceExportPrint.Designer.vb">
+      <DependentUpon>frmInvoiceExportPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceExportPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceLocalControl.Designer.vb">
+      <DependentUpon>frmInvoiceLocalControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceLocalControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceLocalPrint.Designer.vb">
+      <DependentUpon>frmInvoiceLocalPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceLocalPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceLocalTax.Designer.vb">
+      <DependentUpon>frmInvoiceLocalTax.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceLocalTax.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceSummaryYear.Designer.vb">
+      <DependentUpon>frmInvoiceSummaryYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceReport\frmInvoiceSummaryYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabForm\frmLab.Designer.vb">
+      <DependentUpon>frmLab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabForm\frmLab.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabForm\frmLabApvSheet.Designer.vb">
+      <DependentUpon>frmLabApvSheet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabForm\frmLabApvSheet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabForm\frmLabClose.Designer.vb">
+      <DependentUpon>frmLabClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabForm\frmLabClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabForm\frmLabSearch.Designer.vb">
+      <DependentUpon>frmLabSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabForm\frmLabSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabReport\frmLabPending.Designer.vb">
+      <DependentUpon>frmLabPending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabReport\frmLabPending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LabReport\frmLabPrint.Designer.vb">
+      <DependentUpon>frmLabPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LabReport\frmLabPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmCustomerNew.Designer.vb">
+      <DependentUpon>frmCustomerNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmCustomerNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmCustomerSite.Designer.vb">
+      <DependentUpon>frmCustomerSite.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmCustomerSite.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmEndBuyers.Designer.vb">
+      <DependentUpon>frmEndBuyers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmEndBuyers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmMachineProductivity2Month.Designer.vb">
+      <DependentUpon>frmMachineProductivity2Month.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmMachineProductivity2Month.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmPackingListDyedRelateRequest.Designer.vb">
+      <DependentUpon>frmPackingListDyedRelateRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmPackingListDyedRelateRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmPackingListGreigeRelateRequest.Designer.vb">
+      <DependentUpon>frmPackingListGreigeRelateRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmPackingListGreigeRelateRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderEnterCustPo.Designer.vb">
+      <DependentUpon>frmSalesOrderEnterCustPo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderEnterCustPo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderEnterCustPoUnique.Designer.vb">
+      <DependentUpon>frmSalesOrderEnterCustPoUnique.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderEnterCustPoUnique.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmExpInvoiceCommision.Designer.vb">
+      <DependentUpon>frmExpInvoiceCommision.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmExpInvoiceCommision.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSoBookShipMentReport.Designer.vb">
+      <DependentUpon>frmSoBookShipMentReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSoBookShipMentReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSOItemHadInvoice.Designer.vb">
+      <DependentUpon>frmSOItemHadInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSOItemHadInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmStockOrderSummary.Designer.vb">
+      <DependentUpon>frmStockOrderSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmStockOrderSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\DlgGetMasterCode.Designer.vb">
+      <DependentUpon>DlgGetMasterCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\DlgGetMasterCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmAgent.Designer.vb">
+      <DependentUpon>frmAgent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmAgent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmCartons.Designer.vb">
+      <DependentUpon>frmCartons.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmCartons.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmColor.Designer.vb">
+      <DependentUpon>frmColor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmColor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmCompositionGroup.Designer.vb">
+      <DependentUpon>frmCompositionGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmCompositionGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmCustomer.Designer.vb">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmDesign.Designer.vb">
+      <DependentUpon>frmDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmDesignImage.Designer.vb">
+      <DependentUpon>frmDesignImage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmDesignImage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmDesignMasterReport.Designer.vb">
+      <DependentUpon>frmDesignMasterReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmDesignMasterReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmDesignSpec.Designer.vb">
+      <DependentUpon>frmDesignSpec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmDesignSpec.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmMould.Designer.vb">
+      <DependentUpon>frmMould.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmMould.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmmtl_locations.Designer.vb">
+      <DependentUpon>frmmtl_locations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmmtl_locations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmPricelist.Designer.vb">
+      <DependentUpon>frmPricelist.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmPricelist.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterForm\frmSupplier.Designer.vb">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm\frmSupplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PackingList\frmPackingListDyed.designer.vb">
+      <DependentUpon>frmPackingListDyed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\frmPackingListDyed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackingList\frmPackingListGreige.designer.vb">
+      <DependentUpon>frmPackingListGreige.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PackingList\frmPackingListGreige.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionForm\frmKOSchedulePlan.Designer.vb">
+      <DependentUpon>frmKOSchedulePlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionForm\frmKOSchedulePlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionForm\frmMachineCapacity.Designer.vb">
+      <DependentUpon>frmMachineCapacity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionForm\frmMachineCapacity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmDesignNoBOM.Designer.vb">
+      <DependentUpon>frmDesignNoBOM.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmDesignNoBOM.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmGreigeDailyProduction.Designer.vb">
+      <DependentUpon>frmGreigeDailyProduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmGreigeDailyProduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmGreigeMonthlyProduction.Designer.vb">
+      <DependentUpon>frmGreigeMonthlyProduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmGreigeMonthlyProduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmKILossByMachine.Designer.vb">
+      <DependentUpon>frmKILossByMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmKILossByMachine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmKOClosed.Designer.vb">
+      <DependentUpon>frmKOClosed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmKOClosed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmKODesignHistory.Designer.vb">
+      <DependentUpon>frmKODesignHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmKODesignHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmKOOutsource.Designer.vb">
+      <DependentUpon>frmKOOutsource.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmKOOutsource.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmKOSchedulePlanDet.Designer.vb">
+      <DependentUpon>frmKOSchedulePlanDet.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmKOSchedulePlanDet.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmMachineProductivity.Designer.vb">
+      <DependentUpon>frmMachineProductivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmMachineProductivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmMachineProductivity2.Designer.vb">
+      <DependentUpon>frmMachineProductivity2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmMachineProductivity2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandForecast.Designer.vb">
+      <DependentUpon>frmYarnDemandForecast.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandForecast.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandForecastDaily.Designer.vb">
+      <DependentUpon>frmYarnDemandForecastDaily.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandForecastDaily.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandForecastSummary.Designer.vb">
+      <DependentUpon>frmYarnDemandForecastSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandForecastSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandHistory.Designer.vb">
+      <DependentUpon>frmYarnDemandHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandMachine.Designer.vb">
+      <DependentUpon>frmYarnDemandMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnDemandMachine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmSONotHaveKO.Designer.vb">
+      <DependentUpon>frmSONotHaveKO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmSONotHaveKO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnTestForm.Designer.vb">
+      <DependentUpon>frmYarnTestForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductionReport\frmYarnTestForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchaseReport\frmPOControl.Designer.vb">
+      <DependentUpon>frmPOControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PurchaseReport\frmPOControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestGMColorMatch.Designer.vb">
+      <DependentUpon>frmRequestGMColorMatch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestGMColorMatch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestC.Designer.vb">
+      <DependentUpon>frmRequestC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestCOnhand.Designer.vb">
+      <DependentUpon>frmRequestCOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestCOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestD.Designer.vb">
+      <DependentUpon>frmRequestD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestDOnhand.Designer.vb">
+      <DependentUpon>frmRequestDOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestDOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestG.Designer.vb">
+      <DependentUpon>frmRequestG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestGOnhand.Designer.vb">
+      <DependentUpon>frmRequestGOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestGOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestS.Designer.vb">
+      <DependentUpon>frmRequestS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestSearch.Designer.vb">
+      <DependentUpon>frmRequestSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestSOnhand.Designer.vb">
+      <DependentUpon>frmRequestSOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForm\frmRequestSOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmPDR.Designer.vb">
+      <DependentUpon>frmPDR.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmPDR.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmPreviewQuotation.Designer.vb">
+      <DependentUpon>frmPreviewQuotation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmPreviewQuotation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrder.Designer.vb">
+      <DependentUpon>frmSalesOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MultiColumnComboBox.vb" />
+    <Compile Include="SalesOrderForm\frmSalesOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSelectPriceLine.Designer.vb">
+      <DependentUpon>frmSelectPriceLine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSelectPriceLine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderClose.Designer.vb">
+      <DependentUpon>frmSalesOrderClose.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderClose.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockSummary.designer.vb">
+      <DependentUpon>frmStockSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="STOrderClosingForm\frmSTOrderClosing.Designer.vb">
+      <DependentUpon>frmSTOrderClosing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STOrderClosingForm\frmSTOrderClosing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderSearch.Designer.vb">
+      <DependentUpon>frmSalesOrderSearch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesOrderSearch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesQuote.Designer.vb">
+      <DependentUpon>frmSalesQuote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderForm\frmSalesQuote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmPriceHistory.Designer.vb">
+      <DependentUpon>frmPriceHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmPriceHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesAmountCompare.Designer.vb">
+      <DependentUpon>frmSalesAmountCompare.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesAmountCompare.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderDeliveryPlan.Designer.vb">
+      <DependentUpon>frmSalesOrderDeliveryPlan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderDeliveryPlan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderStatusByEmp.Designer.vb">
+      <DependentUpon>frmSalesOrderStatusByEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderStatusByEmp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderByMonth.Designer.vb">
+      <DependentUpon>frmSalesOrderByMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderByMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderDelivery.Designer.vb">
+      <DependentUpon>frmSalesOrderDelivery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderDelivery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderInvoice.Designer.vb">
+      <DependentUpon>frmSalesOrderInvoice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderInvoice.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderPrint.Designer.vb">
+      <DependentUpon>frmSalesOrderPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderStatusByAgency.Designer.vb">
+      <DependentUpon>frmSalesOrderStatusByAgency.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderStatusByAgency.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderStatusByCustomer.Designer.vb">
+      <DependentUpon>frmSalesOrderStatusByCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderStatusByCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderSummary.Designer.vb">
+      <DependentUpon>frmSalesOrderSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderSummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderTrace.Designer.vb">
+      <DependentUpon>frmSalesOrderTrace.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesOrderTrace.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesPerformance.Designer.vb">
+      <DependentUpon>frmSalesPerformance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSalesPerformance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSODeliveryCalendar.Designer.vb">
+      <DependentUpon>frmSODeliveryCalendar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSODeliveryCalendar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSONotClosed.Designer.vb">
+      <DependentUpon>frmSONotClosed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSONotClosed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSOSummaryByYear.Designer.vb">
+      <DependentUpon>frmSOSummaryByYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SalesOrderReport\frmSOSummaryByYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\dlgSelectItemsList.Designer.vb">
+      <DependentUpon>dlgSelectItemsList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\dlgSelectItemsList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmDyedOutSampleSearchPLS.designer.vb">
+      <DependentUpon>frmDyedOutSampleSearchPLS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmDyedOutSampleSearchPLS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSeachCustomers.Designer.vb">
+      <DependentUpon>frmSeachCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSeachCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSeachCustomersParent.Designer.vb">
+      <DependentUpon>frmSeachCustomersParent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSeachCustomersParent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDesign.Designer.vb">
+      <DependentUpon>frmSearchDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDFOrderPreset.Designer.vb">
+      <DependentUpon>frmSearchDFOrderPreset.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDFOrderPreset.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDIN.Designer.vb">
+      <DependentUpon>frmSearchDIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDOUT.Designer.vb">
+      <DependentUpon>frmSearchDOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDOUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDyedRoll.Designer.vb">
+      <DependentUpon>frmSearchDyedRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchDyedRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchGIN.designer.vb">
+      <DependentUpon>frmSearchGIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchGIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchGOUT.Designer.vb">
+      <DependentUpon>frmSearchGOUT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchGOUT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchGreigeIn.Designer.vb">
+      <DependentUpon>frmSearchGreigeIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchGreigeIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchKO.Designer.vb">
+      <DependentUpon>frmSearchKO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchKO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchLOT.designer.vb">
+      <DependentUpon>frmSearchLOT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchLOT.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPackingListD.designer.vb">
+      <DependentUpon>frmSearchPackingListD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPackingListD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPackingListG.designer.vb">
+      <DependentUpon>frmSearchPackingListG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPackingListG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPDF.designer.vb">
+      <DependentUpon>frmSearchPDF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPDF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPLD.Designer.vb">
+      <DependentUpon>frmSearchPLD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPLD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPLG.Designer.vb">
+      <DependentUpon>frmSearchPLG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPLG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPO.Designer.vb">
+      <DependentUpon>frmSearchPO.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchPO.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchREQD.Designer.vb">
+      <DependentUpon>frmSearchREQD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchREQD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchREQG.Designer.vb">
+      <DependentUpon>frmSearchREQG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchREQG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchSOCustItem.Designer.vb">
+      <DependentUpon>frmSearchSOCustItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchForm\frmSearchSOCustItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmDOUTDocument.Designer.vb">
+      <DependentUpon>frmDOUTDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmDOUTDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmEndingDyedInventory.Designer.vb">
+      <DependentUpon>frmEndingDyedInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmEndingDyedInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmEndingGreigeInventory.Designer.vb">
+      <DependentUpon>frmEndingGreigeInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmEndingGreigeInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmEndingYarnInventory.Designer.vb">
+      <DependentUpon>frmEndingYarnInventory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmEndingYarnInventory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmGOUTDocument.Designer.vb">
+      <DependentUpon>frmGOUTDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmGOUTDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmStockDClearanceSale.Designer.vb">
+      <DependentUpon>frmStockDClearanceSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmStockDClearanceSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockDocument\frmStockGClearanceSale.Designer.vb">
+      <DependentUpon>frmStockGClearanceSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockDocument\frmStockGClearanceSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutFromPLD.Designer.vb">
+      <DependentUpon>frmDyedOutFromPLD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutFromPLD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutFromRequest.Designer.vb">
+      <DependentUpon>frmDyedOutFromRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutFromRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutSample.Designer.vb">
+      <DependentUpon>frmDyedOutSample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutSample.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutSampleBarcode.Designer.vb">
+      <DependentUpon>frmDyedOutSampleBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmDyedOutSampleBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeInEditQcRemark.Designer.vb">
+      <DependentUpon>frmGreigeInEditQcRemark.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeInEditQcRemark.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmHangerIN.designer.vb">
+      <DependentUpon>frmHangerIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmHangerIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmHangerOut.designer.vb">
+      <DependentUpon>frmHangerOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmHangerOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmHangerReturn.designer.vb">
+      <DependentUpon>frmHangerReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmHangerReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmPLD.Designer.vb">
+      <DependentUpon>frmPLD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmPLD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeOutChangeDesign.Designer.vb">
+      <DependentUpon>frmGreigeOutChangeDesign.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeOutChangeDesign.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeINReturn.Designer.vb">
+      <DependentUpon>frmGreigeINReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeINReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeOut.Designer.vb">
+      <DependentUpon>frmGreigeOut.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeOut.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmPLG.Designer.vb">
+      <DependentUpon>frmPLG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmPLG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeOutFromRequest.Designer.vb">
+      <DependentUpon>frmGreigeOutFromRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeOutFromRequest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeTransfer.Designer.vb">
+      <DependentUpon>frmGreigeTransfer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmGreigeTransfer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmPrintSampleTag.Designer.vb">
+      <DependentUpon>frmPrintSampleTag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmPrintSampleTag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmSampleGreigeStockIN.vb.Designer.vb">
+      <DependentUpon>frmSampleGreigeStockIN.vb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmSampleGreigeStockIN.vb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmCINReturn.Designer.vb">
+      <DependentUpon>frmCINReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmCINReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFD_DefectRoll.Designer.vb">
+      <DependentUpon>frmStockGIN_PFD_DefectRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFD_DefectRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockDIN.Designer.vb">
+      <DependentUpon>frmStockDIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockDIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINManual.Designer.vb">
+      <DependentUpon>frmStockDINManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINPurchase.Designer.vb">
+      <DependentUpon>frmStockDINPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINReturn.Designer.vb">
+      <DependentUpon>frmStockDINReturn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINReturn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINReturnProduction.Designer.vb">
+      <DependentUpon>frmStockDINReturnProduction.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockDINReturnProduction.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockDLocation.Designer.vb">
+      <DependentUpon>frmStockDLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockDLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGINPurchase.Designer.vb">
+      <DependentUpon>frmStockGINPurchase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGINPurchase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_KOManual.Designer.vb">
+      <DependentUpon>frmStockGIN_KOManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_KOManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_KOManualIndex.Designer.vb">
+      <DependentUpon>frmStockGIN_KOManualIndex.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_KOManualIndex.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFD.Designer.vb">
+      <DependentUpon>frmStockGIN_PFD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFDManual.Designer.vb">
+      <DependentUpon>frmStockGIN_PFDManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFDManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFD_EntryDefectRoll.Designer.vb">
+      <DependentUpon>frmStockGIN_PFD_EntryDefectRoll.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGIN_PFD_EntryDefectRoll.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGLocation.Designer.vb">
+      <DependentUpon>frmStockGLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockGOUTManual.Designer.vb">
+      <DependentUpon>frmStockGOUTManual.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockGOUTManual.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockForm\frmStockSIN.Designer.vb">
+      <DependentUpon>frmStockSIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockForm\frmStockSIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmCancelledOrderPending.designer.vb">
+      <DependentUpon>frmCancelledOrderPending.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmCancelledOrderPending.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDINControl.designer.vb">
+      <DependentUpon>frmDINControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDINControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDINControl2.designer.vb">
+      <DependentUpon>frmDINControl2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDINControl2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDINDocument.Designer.vb">
+      <DependentUpon>frmDINDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDINDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDINDyeCharge.designer.vb">
+      <DependentUpon>frmDINDyeCharge.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDINDyeCharge.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDOUTControl.designer.vb">
+      <DependentUpon>frmDOUTControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDOUTControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDyedIN.Designer.vb">
+      <DependentUpon>frmDyedIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDyedIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmDyedINByMonth.Designer.vb">
+      <DependentUpon>frmDyedINByMonth.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmDyedINByMonth.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGINDocument.Designer.vb">
+      <DependentUpon>frmGINDocument.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGINDocument.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGINGrade.Designer.vb">
+      <DependentUpon>frmGINGrade.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGINGrade.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGINLoss.Designer.vb">
+      <DependentUpon>frmGINLoss.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGINLoss.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGOUTControl.designer.vb">
+      <DependentUpon>frmGOUTControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGOUTControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGOUTDFControl.designer.vb">
+      <DependentUpon>frmGOUTDFControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGOUTDFControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeBarcode.Designer.vb">
+      <DependentUpon>frmGreigeBarcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeBarcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeIN.Designer.vb">
+      <DependentUpon>frmGreigeIN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeIN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeLog.designer.vb">
+      <DependentUpon>frmGreigeLog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeLog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeOnhandAging.Designer.vb">
+      <DependentUpon>frmGreigeOnhandAging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeOnhandAging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeOnhandByDesigns.Designer.vb">
+      <DependentUpon>frmGreigeOnhandByDesigns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeOnhandByDesigns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigePDFOnhand.Designer.vb">
+      <DependentUpon>frmGreigePDFOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigePDFOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeSummaryByDate.Designer.vb">
+      <DependentUpon>frmGreigeSummaryByDate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeSummaryByDate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeSummaryByMachine.Designer.vb">
+      <DependentUpon>frmGreigeSummaryByMachine.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmGreigeSummaryByMachine.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmHangerOutControl.designer.vb">
+      <DependentUpon>frmHangerOutControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmHangerOutControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmHangerStockBalance.designer.vb">
+      <DependentUpon>frmHangerStockBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmHangerStockBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmNewDesignNo.designer.vb">
+      <DependentUpon>frmNewDesignNo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmNewDesignNo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmNewYarnCode.designer.vb">
+      <DependentUpon>frmNewYarnCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmNewYarnCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmSampleDesignHistory.designer.vb">
+      <DependentUpon>frmSampleDesignHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmSampleDesignHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmSampleOutControl.designer.vb">
+      <DependentUpon>frmSampleOutControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmSampleOutControl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmSampleStockBalance.Designer.vb">
+      <DependentUpon>frmSampleStockBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmSampleStockBalance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmSearchRollNoD.Designer.vb">
+      <DependentUpon>frmSearchRollNoD.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmSearchRollNoD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmSearchRollNoG.Designer.vb">
+      <DependentUpon>frmSearchRollNoG.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmSearchRollNoG.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockByBOI.designer.vb">
+      <DependentUpon>frmStockByBOI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockByBOI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockCancelled.Designer.vb">
+      <DependentUpon>frmStockCancelled.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockCancelled.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockCOnhand.Designer.vb">
+      <DependentUpon>frmStockCOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockCOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockDBarcodevb.Designer.vb">
+      <DependentUpon>frmStockDBarcodevb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockDBarcodevb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockDPendingCutting.Designer.vb">
+      <DependentUpon>frmStockDPendingCutting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockDPendingCutting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhand.Designer.vb">
+      <DependentUpon>frmStockGOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhand2.Designer.vb">
+      <DependentUpon>frmStockGOnhand2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhand2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhandLocation.Designer.vb">
+      <DependentUpon>frmStockGOnhandLocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhandLocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhandMovementStatus.Designer.vb">
+      <DependentUpon>frmStockGOnhandMovementStatus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockGOnhandMovementStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockMovement.Designer.vb">
+      <DependentUpon>frmStockMovement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockMovement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockOnhand.Designer.vb">
+      <DependentUpon>frmStockOnhand.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockOnhand.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockOnHandSummaryYear.Designer.vb">
+      <DependentUpon>frmStockOnHandSummaryYear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockOnHandSummaryYear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockReport\frmStockOutSample.Designer.vb">
+      <DependentUpon>frmStockOutSample.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StockReport\frmStockOutSample.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CuttingForm\frmCuttingIN.resx">
+      <DependentUpon>frmCuttingIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\formDFApvSheet.resx">
+      <DependentUpon>formDFApvSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\frmBlankApvSheet.resx">
+      <DependentUpon>frmBlankApvSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\frmDyingOrder.resx">
+      <DependentUpon>frmDyingOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\frmDyingOrderChange.resx">
+      <DependentUpon>frmDyingOrderChange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\frmDyingOrderClose.resx">
+      <DependentUpon>frmDyingOrderClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\frmDyingOrderSearch.resx">
+      <DependentUpon>frmDyingOrderSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderForm\frmDyingOrderV01.resx">
+      <DependentUpon>frmDyingOrderV01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderClosing.resx">
+      <DependentUpon>frmDyingOrderClosing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderDesignSearch.resx">
+      <DependentUpon>frmDyingOrderDesignSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderEvaluation.resx">
+      <DependentUpon>frmDyingOrderEvaluation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderInvoiceControl.resx">
+      <DependentUpon>frmDyingOrderInvoiceControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderPending.resx">
+      <DependentUpon>frmDyingOrderPending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderPending2.resx">
+      <DependentUpon>frmDyingOrderPending2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderPrint.resx">
+      <DependentUpon>frmDyingOrderPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderSummary.resx">
+      <DependentUpon>frmDyingOrderSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderWeight.resx">
+      <DependentUpon>frmDyingOrderWeight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmDyingOrderWeight2.resx">
+      <DependentUpon>frmDyingOrderWeight2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmKOYarn.resx">
+      <DependentUpon>frmKOYarn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DyingOrderReport\frmStockSampleAging.resx">
+      <DependentUpon>frmStockSampleAging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GammaReport\frmCMRLabStatus.resx">
+      <DependentUpon>frmCMRLabStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GammaReport\frmGammaDyePerformance.resx">
+      <DependentUpon>frmGammaDyePerformance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GammaReport\frmGemmaKnitsCMRControl.resx">
+      <DependentUpon>frmGemmaKnitsCMRControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GammaReport\frmGammaDFControl.resx">
+      <DependentUpon>frmGammaDFControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GammaReport\frmGemmaKnitsSOControl.resx">
+      <DependentUpon>frmGemmaKnitsSOControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GammaReport\frmrptCMRList.resx">
+      <DependentUpon>frmrptCMRList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmGridLayoutSettings.resx">
+      <DependentUpon>frmGridLayoutSettings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmMainmenu.resx">
+      <DependentUpon>frmMainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmReport.resx">
+      <DependentUpon>frmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\frmSplashScreen.resx">
+      <DependentUpon>frmSplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GeneralForm\TaskBarNotifier.resx">
+      <DependentUpon>TaskBarNotifier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceExportControl.resx">
+      <DependentUpon>frmInvoiceExportControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceExportControl2.resx">
+      <DependentUpon>frmInvoiceExportControl2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceExportPrint.resx">
+      <DependentUpon>frmInvoiceExportPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceLocalControl.resx">
+      <DependentUpon>frmInvoiceLocalControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceLocalPrint.resx">
+      <DependentUpon>frmInvoiceLocalPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceLocalTax.resx">
+      <DependentUpon>frmInvoiceLocalTax.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceReport\frmInvoiceSummaryYear.resx">
+      <DependentUpon>frmInvoiceSummaryYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabForm\frmLab.resx">
+      <DependentUpon>frmLab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabForm\frmLabApvSheet.resx">
+      <DependentUpon>frmLabApvSheet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabForm\frmLabClose.resx">
+      <DependentUpon>frmLabClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabForm\frmLabSearch.resx">
+      <DependentUpon>frmLabSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabReport\frmLabPending.resx">
+      <DependentUpon>frmLabPending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LabReport\frmLabPrint.resx">
+      <DependentUpon>frmLabPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsForm\frmDyedTransfer.resx">
+      <DependentUpon>frmDyedTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsForm\frmYarnLocation.resx">
+      <DependentUpon>frmYarnLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsForm\frmYarnTransfer.resx">
+      <DependentUpon>frmYarnTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagementReport\frmManagementSummaryReport.resx">
+      <DependentUpon>frmManagementSummaryReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmCustomerNew.resx">
+      <DependentUpon>frmCustomerNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmCustomerSite.resx">
+      <DependentUpon>frmCustomerSite.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmEndBuyers.resx">
+      <DependentUpon>frmEndBuyers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmMachineProductivity2Month.resx">
+      <DependentUpon>frmMachineProductivity2Month.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmPackingListDyedRelateRequest.resx">
+      <DependentUpon>frmPackingListDyedRelateRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmPackingListGreigeRelateRequest.resx">
+      <DependentUpon>frmPackingListGreigeRelateRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmSalesOrderEnterCustPo.resx">
+      <DependentUpon>frmSalesOrderEnterCustPo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmSalesOrderEnterCustPoUnique.resx">
+      <DependentUpon>frmSalesOrderEnterCustPoUnique.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmExpInvoiceCommision.resx">
+      <DependentUpon>frmExpInvoiceCommision.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSoBookShipMentReport.resx">
+      <DependentUpon>frmSoBookShipMentReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSOItemHadInvoice.resx">
+      <DependentUpon>frmSOItemHadInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmStockOrderSummary.resx">
+      <DependentUpon>frmStockOrderSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\DlgGetMasterCode.resx">
+      <DependentUpon>DlgGetMasterCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmAgent.resx">
+      <DependentUpon>frmAgent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmCartons.resx">
+      <DependentUpon>frmCartons.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmColor.resx">
+      <DependentUpon>frmColor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmCompositionGroup.resx">
+      <DependentUpon>frmCompositionGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmCustomer.resx">
+      <DependentUpon>frmCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmDesign.resx">
+      <DependentUpon>frmDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmDesignImage.resx">
+      <DependentUpon>frmDesignImage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmDesignMasterReport.resx">
+      <DependentUpon>frmDesignMasterReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmDesignSpec.resx">
+      <DependentUpon>frmDesignSpec.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmMould.resx">
+      <DependentUpon>frmMould.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmmtl_locations.resx">
+      <DependentUpon>frmmtl_locations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmPricelist.resx">
+      <DependentUpon>frmPricelist.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm\frmSupplier.resx">
+      <DependentUpon>frmSupplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingList\frmPackingListDyed.resx">
+      <DependentUpon>frmPackingListDyed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackingList\frmPackingListGreige.resx">
+      <DependentUpon>frmPackingListGreige.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionForm\frmKOSchedulePlan.resx">
+      <DependentUpon>frmKOSchedulePlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionForm\frmMachineCapacity.resx">
+      <DependentUpon>frmMachineCapacity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmDesignNoBOM.resx">
+      <DependentUpon>frmDesignNoBOM.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmGreigeDailyProduction.resx">
+      <DependentUpon>frmGreigeDailyProduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmGreigeMonthlyProduction.resx">
+      <DependentUpon>frmGreigeMonthlyProduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmKILossByMachine.resx">
+      <DependentUpon>frmKILossByMachine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmKOClosed.resx">
+      <DependentUpon>frmKOClosed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmKODesignHistory.resx">
+      <DependentUpon>frmKODesignHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmKOOutsource.resx">
+      <DependentUpon>frmKOOutsource.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmKOSchedulePlanDet.resx">
+      <DependentUpon>frmKOSchedulePlanDet.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmMachineProductivity.resx">
+      <DependentUpon>frmMachineProductivity.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmMachineProductivity2.resx">
+      <DependentUpon>frmMachineProductivity2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmYarnDemandForecast.resx">
+      <DependentUpon>frmYarnDemandForecast.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmYarnDemandForecastDaily.resx">
+      <DependentUpon>frmYarnDemandForecastDaily.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmYarnDemandForecastSummary.resx">
+      <DependentUpon>frmYarnDemandForecastSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmYarnDemandHistory.resx">
+      <DependentUpon>frmYarnDemandHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmYarnDemandMachine.resx">
+      <DependentUpon>frmYarnDemandMachine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmSONotHaveKO.resx">
+      <DependentUpon>frmSONotHaveKO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductionReport\frmYarnTestForm.resx">
+      <DependentUpon>frmYarnTestForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchaseReport\frmPOControl.resx">
+      <DependentUpon>frmPOControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestGMColorMatch.resx">
+      <DependentUpon>frmRequestGMColorMatch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestC.resx">
+      <DependentUpon>frmRequestC.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestCOnhand.resx">
+      <DependentUpon>frmRequestCOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestD.resx">
+      <DependentUpon>frmRequestD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestDOnhand.resx">
+      <DependentUpon>frmRequestDOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestG.resx">
+      <DependentUpon>frmRequestG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestGOnhand.resx">
+      <DependentUpon>frmRequestGOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestS.resx">
+      <DependentUpon>frmRequestS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestSearch.resx">
+      <DependentUpon>frmRequestSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestForm\frmRequestSOnhand.resx">
+      <DependentUpon>frmRequestSOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmPDR.resx">
+      <DependentUpon>frmPDR.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmPreviewQuotation.resx">
+      <DependentUpon>frmPreviewQuotation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmSalesOrder.resx">
+      <DependentUpon>frmSalesOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmSalesOrderClose.resx">
+      <DependentUpon>frmSalesOrderClose.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STOrderClosingForm\frmSTOrderClosing.resx">
+      <DependentUpon>frmSTOrderClosing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmSalesOrderSearch.resx">
+      <DependentUpon>frmSalesOrderSearch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderForm\frmSalesQuote.resx">
+      <DependentUpon>frmSalesQuote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmPriceHistory.resx">
+      <DependentUpon>frmPriceHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesAmountCompare.resx">
+      <DependentUpon>frmSalesAmountCompare.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderByMonth.resx">
+      <DependentUpon>frmSalesOrderByMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderDelivery.resx">
+      <DependentUpon>frmSalesOrderDelivery.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderDeliveryPlan.resx">
+      <DependentUpon>frmSalesOrderDeliveryPlan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderInvoice.resx">
+      <DependentUpon>frmSalesOrderInvoice.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderPrint.resx">
+      <DependentUpon>frmSalesOrderPrint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderStatusByAgency.resx">
+      <DependentUpon>frmSalesOrderStatusByAgency.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderStatusByCustomer.resx">
+      <DependentUpon>frmSalesOrderStatusByCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderStatusByEmp.resx">
+      <DependentUpon>frmSalesOrderStatusByEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderSummary.resx">
+      <DependentUpon>frmSalesOrderSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesOrderTrace.resx">
+      <DependentUpon>frmSalesOrderTrace.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSalesPerformance.resx">
+      <DependentUpon>frmSalesPerformance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSODeliveryCalendar.resx">
+      <DependentUpon>frmSODeliveryCalendar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSONotClosed.resx">
+      <DependentUpon>frmSONotClosed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SalesOrderReport\frmSOSummaryByYear.resx">
+      <DependentUpon>frmSOSummaryByYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\dlgSelectItemsList.resx">
+      <DependentUpon>dlgSelectItemsList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmDyedOutSampleSearchPLS.resx">
+      <DependentUpon>frmDyedOutSampleSearchPLS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSeachCustomers.resx">
+      <DependentUpon>frmSeachCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSeachCustomersParent.resx">
+      <DependentUpon>frmSeachCustomersParent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchDesign.resx">
+      <DependentUpon>frmSearchDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchDFOrderPreset.resx">
+      <DependentUpon>frmSearchDFOrderPreset.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchDIN.resx">
+      <DependentUpon>frmSearchDIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchDOUT.resx">
+      <DependentUpon>frmSearchDOUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchDyedRoll.resx">
+      <DependentUpon>frmSearchDyedRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchGIN.resx">
+      <DependentUpon>frmSearchGIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchGOUT.resx">
+      <DependentUpon>frmSearchGOUT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchGreigeIn.resx">
+      <DependentUpon>frmSearchGreigeIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchKO.resx">
+      <DependentUpon>frmSearchKO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchLOT.resx">
+      <DependentUpon>frmSearchLOT.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchPackingListD.resx">
+      <DependentUpon>frmSearchPackingListD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchPackingListG.resx">
+      <DependentUpon>frmSearchPackingListG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchPDF.resx">
+      <DependentUpon>frmSearchPDF.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchPLD.resx">
+      <DependentUpon>frmSearchPLD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchPLG.resx">
+      <DependentUpon>frmSearchPLG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchPO.resx">
+      <DependentUpon>frmSearchPO.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchREQD.resx">
+      <DependentUpon>frmSearchREQD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchREQG.resx">
+      <DependentUpon>frmSearchREQG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchForm\frmSearchSOCustItem.resx">
+      <DependentUpon>frmSearchSOCustItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmDOUTDocument.resx">
+      <DependentUpon>frmDOUTDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmEndingDyedInventory.resx">
+      <DependentUpon>frmEndingDyedInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmEndingGreigeInventory.resx">
+      <DependentUpon>frmEndingGreigeInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmEndingYarnInventory.resx">
+      <DependentUpon>frmEndingYarnInventory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmGOUTDocument.resx">
+      <DependentUpon>frmGOUTDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmStockDClearanceSale.resx">
+      <DependentUpon>frmStockDClearanceSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockDocument\frmStockGClearanceSale.resx">
+      <DependentUpon>frmStockGClearanceSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmDyedOutFromPLD.resx">
+      <DependentUpon>frmDyedOutFromPLD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmDyedOutFromRequest.resx">
+      <DependentUpon>frmDyedOutFromRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmDyedOutSample.resx">
+      <DependentUpon>frmDyedOutSample.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmDyedOutSampleBarcode.resx">
+      <DependentUpon>frmDyedOutSampleBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmGreigeInEditQcRemark.resx">
+      <DependentUpon>frmGreigeInEditQcRemark.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmHangerIN.resx">
+      <DependentUpon>frmHangerIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmHangerOut.resx">
+      <DependentUpon>frmHangerOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmHangerReturn.resx">
+      <DependentUpon>frmHangerReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmPLD.resx">
+      <DependentUpon>frmPLD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmGreigeOutChangeDesign.resx">
+      <DependentUpon>frmGreigeOutChangeDesign.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmGreigeINReturn.resx">
+      <DependentUpon>frmGreigeINReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmGreigeOut.resx">
+      <DependentUpon>frmGreigeOut.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmPLG.resx">
+      <DependentUpon>frmPLG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmGreigeOutFromRequest.resx">
+      <DependentUpon>frmGreigeOutFromRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmGreigeTransfer.resx">
+      <DependentUpon>frmGreigeTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmPrintSampleTag.resx">
+      <DependentUpon>frmPrintSampleTag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmSampleGreigeStockIN.vb.resx">
+      <DependentUpon>frmSampleGreigeStockIN.vb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmCINReturn.resx">
+      <DependentUpon>frmCINReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGIN_PFD_DefectRoll.resx">
+      <DependentUpon>frmStockGIN_PFD_DefectRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockDIN.resx">
+      <DependentUpon>frmStockDIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockDINManual.resx">
+      <DependentUpon>frmStockDINManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockDINPurchase.resx">
+      <DependentUpon>frmStockDINPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockDINReturn.resx">
+      <DependentUpon>frmStockDINReturn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockDINReturnProduction.resx">
+      <DependentUpon>frmStockDINReturnProduction.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockDLocation.resx">
+      <DependentUpon>frmStockDLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGINPurchase.resx">
+      <DependentUpon>frmStockGINPurchase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGIN_KOManual.resx">
+      <DependentUpon>frmStockGIN_KOManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGIN_KOManualIndex.resx">
+      <DependentUpon>frmStockGIN_KOManualIndex.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGIN_PFD.resx">
+      <DependentUpon>frmStockGIN_PFD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGIN_PFDManual.resx">
+      <DependentUpon>frmStockGIN_PFDManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGIN_PFD_EntryDefectRoll.resx">
+      <DependentUpon>frmStockGIN_PFD_EntryDefectRoll.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGLocation.resx">
+      <DependentUpon>frmStockGLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockGOUTManual.resx">
+      <DependentUpon>frmStockGOUTManual.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockForm\frmStockSIN.resx">
+      <DependentUpon>frmStockSIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmCancelledOrderPending.resx">
+      <DependentUpon>frmCancelledOrderPending.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDINControl.resx">
+      <DependentUpon>frmDINControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDINControl2.resx">
+      <DependentUpon>frmDINControl2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDINDocument.resx">
+      <DependentUpon>frmDINDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDINDyeCharge.resx">
+      <DependentUpon>frmDINDyeCharge.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDOUTControl.resx">
+      <DependentUpon>frmDOUTControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDyedIN.resx">
+      <DependentUpon>frmDyedIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmDyedINByMonth.resx">
+      <DependentUpon>frmDyedINByMonth.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGINDocument.resx">
+      <DependentUpon>frmGINDocument.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGINGrade.resx">
+      <DependentUpon>frmGINGrade.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGINLoss.resx">
+      <DependentUpon>frmGINLoss.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGOUTControl.resx">
+      <DependentUpon>frmGOUTControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGOUTDFControl.resx">
+      <DependentUpon>frmGOUTDFControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeBarcode.resx">
+      <DependentUpon>frmGreigeBarcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeIN.resx">
+      <DependentUpon>frmGreigeIN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeLog.resx">
+      <DependentUpon>frmGreigeLog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeOnhandAging.resx">
+      <DependentUpon>frmGreigeOnhandAging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeOnhandByDesigns.resx">
+      <DependentUpon>frmGreigeOnhandByDesigns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigePDFOnhand.resx">
+      <DependentUpon>frmGreigePDFOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeSummaryByDate.resx">
+      <DependentUpon>frmGreigeSummaryByDate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmGreigeSummaryByMachine.resx">
+      <DependentUpon>frmGreigeSummaryByMachine.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmHangerOutControl.resx">
+      <DependentUpon>frmHangerOutControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmHangerStockBalance.resx">
+      <DependentUpon>frmHangerStockBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmNewDesignNo.resx">
+      <DependentUpon>frmNewDesignNo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmNewYarnCode.resx">
+      <DependentUpon>frmNewYarnCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmSampleDesignHistory.resx">
+      <DependentUpon>frmSampleDesignHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmSampleOutControl.resx">
+      <DependentUpon>frmSampleOutControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmSampleStockBalance.resx">
+      <DependentUpon>frmSampleStockBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmSearchRollNoD.resx">
+      <DependentUpon>frmSearchRollNoD.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmSearchRollNoG.resx">
+      <DependentUpon>frmSearchRollNoG.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockByBOI.resx">
+      <DependentUpon>frmStockByBOI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockCancelled.resx">
+      <DependentUpon>frmStockCancelled.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockCOnhand.resx">
+      <DependentUpon>frmStockCOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockDBarcodevb.resx">
+      <DependentUpon>frmStockDBarcodevb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockDPendingCutting.resx">
+      <DependentUpon>frmStockDPendingCutting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockGOnhand.resx">
+      <DependentUpon>frmStockGOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockGOnhand2.resx">
+      <DependentUpon>frmStockGOnhand2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockGOnhandLocation.resx">
+      <DependentUpon>frmStockGOnhandLocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockGOnhandMovementStatus.resx">
+      <DependentUpon>frmStockGOnhandMovementStatus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockMovement.resx">
+      <DependentUpon>frmStockMovement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockOnhand.resx">
+      <DependentUpon>frmStockOnhand.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockOnHandSummaryYear.resx">
+      <DependentUpon>frmStockOnHandSummaryYear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockReport\frmStockOutSample.resx">
+      <DependentUpon>frmStockOutSample.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ProjectCertificate.pfx" />
+    <None Include="SalesOrderSystem_1_TemporaryKey.pfx" />
+    <None Include="SalesOrderSystem_2_TemporaryKey.pfx" />
+    <None Include="SalesOrderSystem_TemporaryKey.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+    <Service Include="{FE73BB80-53F4-4AD0-A5F9-6A0BCE662292}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DLL\Classes.dll" />
+    <Content Include="DLL\STV.dll" />
+    <Content Include="kdf.ico" />
+    <None Include="Resources\ExcelWorksheetView_16x1.png" />
+    <None Include="Resources\ExcelWorksheetView_16x.png" />
+    <None Include="Resources\Filter_16x.png" />
+    <None Include="Resources\Tag_16x1.png" />
+    <None Include="Resources\Document_16x.png" />
+    <None Include="Resources\Expand_16x.png" />
+    <None Include="Resources\ConfirmButton_16x.png" />
+    <None Include="Resources\Copy_16x.png" />
+    <None Include="Resources\Cancel_16x.png" />
+    <None Include="Resources\Checkmark_16x.png" />
+    <None Include="Resources\WriteToHistory_16x.png" />
+    <None Include="Resources\Save_16x.png" />
+    <None Include="Resources\Print_16x.png" />
+    <None Include="Resources\ASX_Upload_blue_16x.png" />
+    <None Include="Resources\ASX_Download_blue_16x.png" />
+    <None Include="Resources\AddField_16x.png" />
+    <None Include="Resources\GenerateAllFromTemplate_16x.png" />
+    <None Include="Resources\Tag_16x.png" />
+    <None Include="Resources\Exit_16x.png" />
+    <None Include="Resources\ApplyCodeChanges_16x.png" />
+    <None Include="Resources\DeleteQuery_16x.png" />
+    <None Include="Resources\EditQuery_16x.png" />
+    <None Include="Resources\AddQuery_16x.png" />
+    <None Include="Resources\Search_16x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ClientDoc">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommLayer">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonControls">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CommonObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Controllers">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.CubeDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.DataSetConversion">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ObjectFactory">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.Prompting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.ReportDefModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportAppServer.XmlSerialize">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CrystalDecisions.ReportSource">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="FlashControlV71">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="log4net">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>False</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.DataVisualization">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.ProcessingObjectModel">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.ReportViewer.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.SqlServer.Types">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ShockwaveFlashObjects">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="stdole">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Exe\" />
+    <Folder Include="GammaForm\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+</Project>

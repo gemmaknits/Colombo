@@ -1,0 +1,141 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Classes
+</name>
+</assembly>
+<members>
+<member name="P:Classes.formBase.userInfo">
+ <summary>
+ Userinfo Object of the current user
+ </summary>
+</member>
+<member name="P:Classes.formBase.menuID">
+ <summary>
+ Menuid of the current form
+ </summary>
+</member>
+<member name="P:Classes.formDataEntry.formMode">
+ <summary>
+ Contains the current status of the form (New, Edit, Cancel)
+ </summary>
+</member>
+<member name="P:Classes.formDataEntry.isDataChanged">
+ <summary>
+ 
+ </summary>
+</member>
+<member name="P:Classes.formDataEntry.askBeforeSave">
+ <summary>
+ set to true if user response is required before saving the data in the form
+ </summary>
+</member>
+<member name="P:Classes.formDataEntry.userResponseToSave">
+ <summary>
+ User's reponse to the save messagebox
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.LoadData(System.String)">
+ <summary>
+ Place the code to load the data from the database
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.LoadData(System.Int32)">
+ <summary>
+ Place the code to load the data from the database
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.NewRecord">
+ <summary>
+ Place the code to set the form for new record.
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.CheckDataChanges">
+ <summary>
+ Place the code to check if the data changes in the form. Return true if modified and False if not modified
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.AskToSave">
+ <summary>
+ Get user response before save data in the form
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.SaveRecord">
+ <summary>
+ Place the code to send the data to the database. If successful return true else return false
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.EndAllEdits">
+ <summary>
+ Place the code to EndEdit all datatables in the form
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.PrintRecord">
+ <summary>
+ Place the code to Print the current document / report
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.CancelRecord">
+ <summary>
+ Place the code to cancel the current document. Return True if cancel is successful , False otherwise
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.SearchRecord">
+ <summary>
+ Place the code to search and retrive the record of the main document. Return True if cancel is successful , False otherwise
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.SetDataBindings">
+ <summary>
+ Place the code to bind the data from the database to the form controls
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.ClearDataBindings">
+ <summary>
+ Place the code to clear the existing data bindings of all controls in the form
+ </summary>    
+</member>
+<member name="M:Classes.formDataEntry.RefreshForm">
+ <summary>
+ Refreshes the data in the form
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.RefreshToolBar">
+ <summary>
+ Place the code to enable / disable toolbar based on menuid / other conditions inside the form
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.RefreshLookupControls">
+ <summary>
+ Place the code to populate all look up controls (combobox, listbox, grids etc.)
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.DeleteRecord">
+ <summary>
+ Place the code to delete the current record. Return True if delete is successful , False otherwise
+ </summary>
+</member>
+<member name="M:Classes.formDataEntry.CopyRecord">
+ <summary>
+ Place the code to copy the current record and create a new one. Return True if delete is successful , False otherwise
+ </summary>
+</member>
+<member name="T:Classes.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Classes.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Classes.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+</members>
+</doc>

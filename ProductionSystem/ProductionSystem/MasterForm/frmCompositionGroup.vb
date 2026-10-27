@@ -1,0 +1,57 @@
+﻿Public Class frmCompositionGroup
+    Dim clsConfig As New clsConfig
+    Dim clsConn As New classConnection
+    Dim clsUser As New classUserInfo
+
+    Public Property UserInfo() As classUserInfo
+        Get
+            UserInfo = clsUser
+        End Get
+        Set(ByVal NewValue As classUserInfo)
+            clsUser = NewValue
+        End Set
+    End Property
+
+    Private Sub frmCompositionGroup_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        grdData.AutoGenerateColumns = False
+        grdData.DataSource = (New classMaster()).GetCompositionGroup()
+    End Sub
+
+    Private Sub btnSave_Click(sender As System.Object, e As System.EventArgs) Handles btnSave.Click
+        MessageBox.Show("ขณะนี้ยังไม่เปิดให้บริการแก้ไขข้อมูล" + vbCrLf + "สามารถดูได้อย่างเดียวเท่านั้น", "System Message", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Private Sub btnPrint_Click(sender As System.Object, e As System.EventArgs) Handles btnPrint.Click
+        Const rptFileName = "rptCompositionGroup.rpt"
+        'If clsuser.ReportPath = "" Then clsuser.ReportPath = clsConfig.ReportPath
+        If Not clsConfig.CheckReport(clsUser.ReportPath, rptFileName) Then Exit Sub
+        Dim frm As New frmReport
+        Dim rpt As New CrystalDecisions.CrystalReports.Engine.ReportDocument
+        Dim stype As String = ""
+        Dim ord As String = ""
+        Me.Cursor = Cursors.WaitCursor
+
+        rpt.Load(clsUser.ReportPath & rptFileName)
+        rpt.DataSourceConnections.Item(0).SetConnection(clsConn.servername, clsConn.database, False)
+        rpt.DataSourceConnections.Item(0).SetLogon(clsConn.Userid, clsConn.Password)
+        rpt.VerifyDatabase()
+
+        'rpt.PrintOptions.PaperSize = CrystalDecisions.Shared.PaperSize.PaperA4
+        'rpt.PrintOptions.PaperOrientation = CrystalDecisions.Shared.PaperOrientation.Landscape
+        'rpt.PrintOptions.PaperSource = CrystalDecisions.Shared.PaperSource.Auto
+
+        frm.Title = "Composition Group Master"
+        frm.CRViewer.ReportSource = rpt
+        frm.MdiParent = Me.ParentForm
+        frm.Show()
+        Me.Cursor = Cursors.Default
+    End Sub
+
+    Private Sub btnMinimized_Click(sender As System.Object, e As System.EventArgs) Handles btnMinimized.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub btnExit_Click(sender As System.Object, e As System.EventArgs) Handles btnExit.Click
+        Me.Close()
+    End Sub
+End Class

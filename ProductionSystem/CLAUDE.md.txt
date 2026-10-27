@@ -1,0 +1,5 @@
+# Rules
+
+- VB.NET WinForms
+- Use Stored Procedure
+- No Try Catch in UI

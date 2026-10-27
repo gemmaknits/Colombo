@@ -1,0 +1,1763 @@
+﻿<!DOCTYPE html>
+<html lang='en'><head>
+<meta charset='utf-8'>
+<title>Stock Greige Summary</title>
+
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%;overflow:hidden}
+  body{font-family:Arial,sans-serif;font-size:12px;background:#e8edf2}
+
+  /* Split-pane page layout */
+  .page{display:flex;flex-direction:column;height:100vh;padding:8px 14px;gap:0}
+  .page-hdr{flex-shrink:0;padding-bottom:6px}
+  h2{color:#1a2d44;font-size:16px;margin-bottom:2px}
+  .subtitle{color:#555;font-size:11px}
+  .hint{color:#2980b9;font-style:italic}
+  .pane-top{flex:1;overflow-y:auto;background:#fff;border-radius:4px 4px 0 0;box-shadow:0 1px 4px rgba(0,0,0,.1);min-height:0}
+  .pane-divider{flex-shrink:0;height:5px;background:#2980b9;cursor:ns-resize}
+  .pane-bottom{flex:1;overflow-y:auto;background:#fff;border-radius:0 0 4px 4px;box-shadow:0 1px 4px rgba(0,0,0,.1);padding:12px 16px;min-height:0}
+  .empty-msg{color:#aaa;font-size:13px;padding:30px;text-align:center}
+  .detail-section{display:none}
+  .detail-section.visible{display:block}
+  .det-title{font-size:12px;color:#1a2d44;margin-bottom:10px;padding-bottom:5px;border-bottom:1px solid #dde3ea}
+
+  /* Summary table */
+  .tbl-main{width:100%;border-collapse:collapse;font-size:12px}
+  .tbl-main thead{position:sticky;top:0;z-index:1}
+  .tbl-main thead tr{background:#1a2d44;color:#fff}
+  .tbl-main th{padding:8px 10px;text-align:left;white-space:nowrap}
+  .tbl-main td{padding:6px 10px;border-bottom:1px solid #e4e8ed;vertical-align:top}
+  .sum-row{cursor:pointer;transition:background .12s}
+  .sum-row:hover{background:#eaf4fb}
+  .active-row{background:#d6eaf8 !important}
+  .active-row .design-cell{text-decoration:underline}
+  .design-cell{color:#2980b9;font-weight:bold}
+  .num{text-align:right;white-space:nowrap}
+  .center{text-align:center}
+  .remark{color:#555;font-size:11px;max-width:280px;line-height:1.4}
+
+  /* Detail merged table */
+  .tbl-merged{width:100%;border-collapse:collapse;font-size:11px}
+  .tbl-merged thead{position:sticky;top:0;z-index:1}
+  .tbl-merged th{padding:5px 8px;text-align:left;white-space:nowrap;border:1px solid #b0c4d8}
+  .tbl-merged td{padding:4px 8px;border:1px solid #dde3ea;white-space:nowrap;vertical-align:middle}
+  .tbl-merged tbody tr:hover td{background:#eaf4fb}
+  .sec-hdr-left{background:#1a5276;color:#fff;text-align:center;font-size:12px;font-weight:bold}
+  .sec-hdr-right{background:#1a6fa8;color:#fff;text-align:center;font-size:12px;font-weight:bold}
+  .st-cell{background:#eaf7fb;font-weight:bold;color:#154360;vertical-align:middle}
+  .ttl-cell{background:#fef9e7;font-weight:bold;color:#7d6608}
+  .bal-cell{background:#fdedec;font-weight:bold;color:#922b21}
+  .tot-row{background:#d5eaf7 !important}
+  .tot-row td{border-top:2px solid #2980b9}
+</style>
+
+<script>
+  function showDetail(id){
+    var target=document.getElementById(id);
+    if(!target) return;
+    var isOpen=target.classList.contains('visible');
+    document.querySelectorAll('.detail-section').forEach(function(s){s.classList.remove('visible');});
+    document.querySelectorAll('.sum-row').forEach(function(r){r.classList.remove('active-row');});
+    var emptyMsg=document.getElementById('empty-msg');
+    if(isOpen){
+      emptyMsg.style.display='';
+    } else {
+      emptyMsg.style.display='none';
+      target.classList.add('visible');
+      var activeRow=document.querySelector('.sum-row[data-id="'+id+'"']');
+      if(activeRow) activeRow.classList.add('active-row');
+      document.querySelector('.pane-bottom').scrollTop=0;
+    }
+  }
+</script>
+</head><body>
+<div class='page'>
+<div class='page-hdr'>
+<h2>Stock Greige Summary</h2>
+<span class='subtitle'>Period: 20/05/2026 &ndash; 20/08/2026 &nbsp;&nbsp; <span class='hint'>Click a design row to view its detail below</span></span>
+</div>
+<div class='pane-top'>
+<table class='tbl-main'>
+<thead><tr>
+<th>#</th><th>Design</th><th>Article</th><th>Composition</th>
+<th>Balance Greige (YDS)</th><th>Greige Ready (YDS)</th><th>Greige Pending (YDS)</th>
+<th>S/T Orders</th>
+</tr></thead><tbody>
+<tr class='sum-row' data-id='d_201195______________' onclick="showDetail('d_201195______________')">
+<td class='center'>1</td>
+<td class='design-cell'>201195              </td>
+<td>PA CHARMEUSE SILK TOUCH                                                                             </td>
+<td>100% PA</td>
+<td class='num'>2,800</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600090</td>
+</tr>
+<tr class='sum-row' data-id='d_201205______________' onclick="showDetail('d_201205______________')">
+<td class='center'>2</td>
+<td class='design-cell'>201205              </td>
+<td>POWER MESH                                                                                          </td>
+<td>86% PA, 14% EL</td>
+<td class='num'>4,299</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600111</td>
+</tr>
+<tr class='sum-row' data-id='d_204555______________' onclick="showDetail('d_204555______________')">
+<td class='center'>3</td>
+<td class='design-cell'>204555              </td>
+<td>PES TULLE                                                                                           </td>
+<td>100% PES</td>
+<td class='num'>6,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600071, ST-2600105</td>
+</tr>
+<tr class='sum-row' data-id='d_204580______________' onclick="showDetail('d_204580______________')">
+<td class='center'>4</td>
+<td class='design-cell'>204580              </td>
+<td>PA TULLE 30328                                                                                      </td>
+<td>100% PA</td>
+<td class='num'>10,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600093, ST-2600104</td>
+</tr>
+<tr class='sum-row' data-id='d_204804______________' onclick="showDetail('d_204804______________')">
+<td class='center'>5</td>
+<td class='design-cell'>204804              </td>
+<td>ELASTIC TULLE                                                                                       </td>
+<td>86% PA, 14% EL</td>
+<td class='num'>2,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600076</td>
+</tr>
+<tr class='sum-row' data-id='d_204823______________' onclick="showDetail('d_204823______________')">
+<td class='center'>6</td>
+<td class='design-cell'>204823              </td>
+<td>ELASTIC TULLE                                                                                       </td>
+<td>90% PA, 10% EL</td>
+<td class='num'>3,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600079</td>
+</tr>
+<tr class='sum-row' data-id='d_204824______________' onclick="showDetail('d_204824______________')">
+<td class='center'>7</td>
+<td class='design-cell'>204824              </td>
+<td>ELASTIC TULLE PASCAL                                                                                </td>
+<td>70% PA, 30% EL</td>
+<td class='num'>13,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600080, ST-2600109</td>
+</tr>
+<tr class='sum-row' data-id='d_204824AA____________' onclick="showDetail('d_204824AA____________')">
+<td class='center'>8</td>
+<td class='design-cell'>204824AA            </td>
+<td>ELASTIC TULLE PASCAL                                                                                </td>
+<td>70% PA, 30% ELASTANE</td>
+<td class='num'>7,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600100</td>
+</tr>
+<tr class='sum-row' data-id='d_204933______________' onclick="showDetail('d_204933______________')">
+<td class='center'>9</td>
+<td class='design-cell'>204933              </td>
+<td>ELASTIC TULLE CREO                                                                                  </td>
+<td>87% PES, 13% ELASTANE</td>
+<td class='num'>6,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600070</td>
+</tr>
+<tr class='sum-row' data-id='d_204990______________' onclick="showDetail('d_204990______________')">
+<td class='center'>10</td>
+<td class='design-cell'>204990              </td>
+<td>PA TULLE                                                                                            </td>
+<td>100% PA</td>
+<td class='num'>2,400</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600107</td>
+</tr>
+<tr class='sum-row' data-id='d_205042AA____________' onclick="showDetail('d_205042AA____________')">
+<td class='center'>11</td>
+<td class='design-cell'>205042AA            </td>
+<td>POWER MESH                                                                                          </td>
+<td>72% PA, 28% ELASTANE</td>
+<td class='num'>1,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600083</td>
+</tr>
+<tr class='sum-row' data-id='d_205048AA____________' onclick="showDetail('d_205048AA____________')">
+<td class='center'>12</td>
+<td class='design-cell'>205048AA            </td>
+<td>PES TULLE INVISIBLE                                                                                 </td>
+<td>100% PES</td>
+<td class='num'>2,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600069</td>
+</tr>
+<tr class='sum-row' data-id='d_205323______________' onclick="showDetail('d_205323______________')">
+<td class='center'>13</td>
+<td class='design-cell'>205323              </td>
+<td>ALICIA                                                                                              </td>
+<td>70% PA, 30% EL</td>
+<td class='num'>3,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600107</td>
+</tr>
+<tr class='sum-row' data-id='d_205484______________' onclick="showDetail('d_205484______________')">
+<td class='center'>14</td>
+<td class='design-cell'>205484              </td>
+<td>205484                                                                                              </td>
+<td>100% PA</td>
+<td class='num'>45,324</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600072, ST-2600078, ST-2600095, ST-2600102, ST-2600108, ST-2600112</td>
+</tr>
+<tr class='sum-row' data-id='d_205484AA____________' onclick="showDetail('d_205484AA____________')">
+<td class='center'>15</td>
+<td class='design-cell'>205484AA            </td>
+<td>205484AA                                                                                            </td>
+<td>100% PA</td>
+<td class='num'>5,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600077</td>
+</tr>
+<tr class='sum-row' data-id='d_205826AA____________' onclick="showDetail('d_205826AA____________')">
+<td class='center'>16</td>
+<td class='design-cell'>205826AA            </td>
+<td>205826AA                                                                                            </td>
+<td> </td>
+<td class='num'>5,500</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600103</td>
+</tr>
+<tr class='sum-row' data-id='d_205898______________' onclick="showDetail('d_205898______________')">
+<td class='center'>17</td>
+<td class='design-cell'>205898              </td>
+<td>ITRI TM soft                                                                                        </td>
+<td> </td>
+<td class='num'>20,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600078, ST-2600102</td>
+</tr>
+<tr class='sum-row' data-id='d_205950______________' onclick="showDetail('d_205950______________')">
+<td class='center'>18</td>
+<td class='design-cell'>205950              </td>
+<td>205950                                                                                              </td>
+<td> </td>
+<td class='num'>3,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600098</td>
+</tr>
+<tr class='sum-row' data-id='d_206524AA____________' onclick="showDetail('d_206524AA____________')">
+<td class='center'>19</td>
+<td class='design-cell'>206524AA            </td>
+<td>CO/PA PIQUET                                                                                        </td>
+<td>59% CO, 41% PA</td>
+<td class='num'>5,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600085</td>
+</tr>
+<tr class='sum-row' data-id='d_207065______________' onclick="showDetail('d_207065______________')">
+<td class='center'>20</td>
+<td class='design-cell'>207065              </td>
+<td>207065                                                                                              </td>
+<td> </td>
+<td class='num'>3,700</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600075, ST-2600097</td>
+</tr>
+<tr class='sum-row' data-id='d_207156______________' onclick="showDetail('d_207156______________')">
+<td class='center'>21</td>
+<td class='design-cell'>207156              </td>
+<td>207156                                                                                              </td>
+<td> </td>
+<td class='num'>10,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600115</td>
+</tr>
+<tr class='sum-row' data-id='d_207207______________' onclick="showDetail('d_207207______________')">
+<td class='center'>22</td>
+<td class='design-cell'>207207              </td>
+<td>Savant TM MO,BOD                                                                                    </td>
+<td> </td>
+<td class='num'>10,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600078</td>
+</tr>
+<tr class='sum-row' data-id='d_254823AA_15_________' onclick="showDetail('d_254823AA_15_________')">
+<td class='center'>23</td>
+<td class='design-cell'>254823AA/15         </td>
+<td>ELASTIC TULLE TM PFD 4823AA                                                                         </td>
+<td> </td>
+<td class='num'>200</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600089</td>
+</tr>
+<tr class='sum-row' data-id='d_255048AA_15_________' onclick="showDetail('d_255048AA_15_________')">
+<td class='center'>24</td>
+<td class='design-cell'>255048AA/15         </td>
+<td>PES TULLE INVISIBLE PFD                                                                             </td>
+<td>100% PES</td>
+<td class='num'>20</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600092</td>
+</tr>
+<tr class='sum-row' data-id='d_255589AB_16_________' onclick="showDetail('d_255589AB_16_________')">
+<td class='center'>25</td>
+<td class='design-cell'>255589AB/16         </td>
+<td>PES TULLE TM PFE 5589AB                                                                             </td>
+<td> </td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600081, ST-2600094, ST-2600106</td>
+</tr>
+<tr class='sum-row' data-id='d_255603AA_15_________' onclick="showDetail('d_255603AA_15_________')">
+<td class='center'>26</td>
+<td class='design-cell'>255603AA/15         </td>
+<td>ELASTIC TULLE PASCAL WIDER TM PFD                                                                   </td>
+<td>70% PA, 30% ELASTANE</td>
+<td class='num'>7,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600091, ST-2600099</td>
+</tr>
+<tr class='sum-row' data-id='d_255729AA_15_________' onclick="showDetail('d_255729AA_15_________')">
+<td class='center'>27</td>
+<td class='design-cell'>255729AA/15         </td>
+<td>CEIBA TM PFD 5729AA                                                                                 </td>
+<td> </td>
+<td class='num'>1</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600113</td>
+</tr>
+<tr class='sum-row' data-id='d_IAY-076AA_11________' onclick="showDetail('d_IAY-076AA_11________')">
+<td class='center'>28</td>
+<td class='design-cell'>IAY-076AA/11        </td>
+<td>2943 SOFT TM SOFT.                                                                                  </td>
+<td> </td>
+<td class='num'>12,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600074</td>
+</tr>
+<tr class='sum-row' data-id='d_IAY-077AA_11________' onclick="showDetail('d_IAY-077AA_11________')">
+<td class='center'>29</td>
+<td class='design-cell'>IAY-077AA/11        </td>
+<td>2975 SOFT TM SOFT.                                                                                  </td>
+<td> </td>
+<td class='num'>5,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600087</td>
+</tr>
+<tr class='sum-row' data-id='d_RAY-051AA_67________' onclick="showDetail('d_RAY-051AA_67________')">
+<td class='center'>30</td>
+<td class='design-cell'>RAY-051AA/67        </td>
+<td>GAYLY TM MO,BOD                                                                                     </td>
+<td> </td>
+<td class='num'>5,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600101</td>
+</tr>
+<tr class='sum-row' data-id='d_SAP-636BB_90________' onclick="showDetail('d_SAP-636BB_90________')">
+<td class='center'>31</td>
+<td class='design-cell'>SAP-636BB/90        </td>
+<td>DIAZ TM BIF+Softphilic + BOD                                                                        </td>
+<td> </td>
+<td class='num'>4,000</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600087</td>
+</tr>
+<tr class='sum-row' data-id='d_W7HT004-1A__________' onclick="showDetail('d_W7HT004-1A__________')">
+<td class='center'>32</td>
+<td class='design-cell'>W7HT004-1A          </td>
+<td>W7HT004-1A                                                                                          </td>
+<td> </td>
+<td class='num'>2,600</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600086</td>
+</tr>
+<tr class='sum-row' data-id='d_W9HV001-1A__________' onclick="showDetail('d_W9HV001-1A__________')">
+<td class='center'>33</td>
+<td class='design-cell'>W9HV001-1A          </td>
+<td>W9HV001-1A                                                                                          </td>
+<td> </td>
+<td class='num'>1,600</td>
+<td class='num'>0</td>
+<td class='num'>0</td>
+<td class='remark'>ST-2600096</td>
+</tr>
+</tbody></table>
+</div>
+<div class='pane-divider'></div>
+<div class='pane-bottom'>
+<div id='empty-msg' class='empty-msg'>&#9757; Select a design from the summary above to view its detail.</div>
+<div id='d_201195______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 201195               &nbsp; PA CHARMEUSE SILK TOUCH                                                                              &nbsp;&nbsp; <strong>Composition :</strong> 100% PA</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600090</td>
+<td rowspan='1' class='st-cell'>02/07/2026</td>
+<td rowspan='1' class='st-cell'>PA CHARMEUSE SILK TOUCH                                                                             </td>
+<td rowspan='1' class='st-cell'>201195              </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>3,000</td>
+<td rowspan='1' class='st-cell'>MTS       </td>
+<td>OC-2600869</td>
+<td>19/08/2026</td>
+<td>4500375762</td>
+<td>PA CHARMEUSE SILK TOUCH TM BO                                                                       </td>
+<td>          </td>
+<td>0HJ</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>200</td>
+<td class='num bal-cell'>2,800</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>3,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>200</strong></td>
+<td></td>
+<td class='num'><strong>2,800</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_201205______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 201205               &nbsp; POWER MESH                                                                                           &nbsp;&nbsp; <strong>Composition :</strong> 86% PA, 14% EL</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600111</td>
+<td rowspan='1' class='st-cell'>12/08/2026</td>
+<td rowspan='1' class='st-cell'>POWER MESH                                                                                          </td>
+<td rowspan='1' class='st-cell'>201205              </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>5,000</td>
+<td rowspan='1' class='st-cell'>MTS       </td>
+<td>OC-2600852</td>
+<td>12/08/2026</td>
+<td>345939</td>
+<td>POWER MESH Ssft TM Soft 1205AA                                                                      </td>
+<td>24K-2497M </td>
+<td>738 New haut</td>
+<td class='num'>701</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>701</td>
+<td class='num bal-cell'>4,299</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>5,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>701</strong></td>
+<td></td>
+<td class='num'><strong>4,299</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204555______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204555               &nbsp; PES TULLE                                                                                            &nbsp;&nbsp; <strong>Composition :</strong> 100% PES</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204580______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204580               &nbsp; PA TULLE 30328                                                                                       &nbsp;&nbsp; <strong>Composition :</strong> 100% PA</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204804______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204804               &nbsp; ELASTIC TULLE                                                                                        &nbsp;&nbsp; <strong>Composition :</strong> 86% PA, 14% EL</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204823______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204823               &nbsp; ELASTIC TULLE                                                                                        &nbsp;&nbsp; <strong>Composition :</strong> 90% PA, 10% EL</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204824______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204824               &nbsp; ELASTIC TULLE PASCAL                                                                                 &nbsp;&nbsp; <strong>Composition :</strong> 70% PA, 30% EL</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204824AA____________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204824AA             &nbsp; ELASTIC TULLE PASCAL                                                                                 &nbsp;&nbsp; <strong>Composition :</strong> 70% PA, 30% ELASTANE</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204933______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204933               &nbsp; ELASTIC TULLE CREO                                                                                   &nbsp;&nbsp; <strong>Composition :</strong> 87% PES, 13% ELASTANE</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_204990______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 204990               &nbsp; PA TULLE                                                                                             &nbsp;&nbsp; <strong>Composition :</strong> 100% PA</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='2' class='st-cell'>ST-2600107</td>
+<td rowspan='2' class='st-cell'>04/08/2026</td>
+<td rowspan='2' class='st-cell'>PA TULLE                                                                                            </td>
+<td rowspan='2' class='st-cell'>204990              </td>
+<td rowspan='2' class='st-cell'>GREIGE</td>
+<td rowspan='2' class='st-cell num'>3,000</td>
+<td rowspan='2' class='st-cell'>MTS       </td>
+<td>OC-2600833</td>
+<td>06/08/2026</td>
+<td>345876</td>
+<td>PA TULLE TM SOFT 4990                                                                               </td>
+<td>12K-0111L </td>
+<td>612 Crystal</td>
+<td class='num'>300</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600833</td>
+<td>06/08/2026</td>
+<td>345876</td>
+<td>PA TULLE TM SOFT 4990                                                                               </td>
+<td>12K-2410M </td>
+<td>331 Mauve</td>
+<td class='num'>300</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>600</td>
+<td class='num bal-cell'>2,400</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>3,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>600</strong></td>
+<td></td>
+<td class='num'><strong>2,400</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205042AA____________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205042AA             &nbsp; POWER MESH                                                                                           &nbsp;&nbsp; <strong>Composition :</strong> 72% PA, 28% ELASTANE</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205048AA____________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205048AA             &nbsp; PES TULLE INVISIBLE                                                                                  &nbsp;&nbsp; <strong>Composition :</strong> 100% PES</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205323______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205323               &nbsp; ALICIA                                                                                               &nbsp;&nbsp; <strong>Composition :</strong> 70% PA, 30% EL</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205484______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205484               &nbsp; 205484                                                                                               &nbsp;&nbsp; <strong>Composition :</strong> 100% PA</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='4' class='st-cell'>ST-2600102</td>
+<td rowspan='4' class='st-cell'>23/07/2026</td>
+<td rowspan='4' class='st-cell'>205484                                                                                              </td>
+<td rowspan='4' class='st-cell'>205484              </td>
+<td rowspan='4' class='st-cell'>GREIGE</td>
+<td rowspan='4' class='st-cell num'>10,000</td>
+<td rowspan='4' class='st-cell'>MTS       </td>
+<td>OC-2600838</td>
+<td>09/08/2026</td>
+<td>DT-0124/0826:510-UB-098</td>
+<td>INVISIBLE TULLE BRIGHT TM SOFT                                                                      </td>
+<td>24K-3183M </td>
+<td>Popcorn 12-0825 TCX</td>
+<td class='num'>577</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600838</td>
+<td>09/08/2026</td>
+<td>DT-0124/0826:510-UB-098</td>
+<td>INVISIBLE TULLE BRIGHT TM SOFT                                                                      </td>
+<td>24K-4480F </td>
+<td>Pink thrill coloro 150-53-40</td>
+<td class='num'>459</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600838</td>
+<td>09/08/2026</td>
+<td>DT-0124/0826:510-UB-098</td>
+<td>INVISIBLE TULLE BRIGHT TM SOFT                                                                      </td>
+<td>24K-9045B </td>
+<td>Black beauty</td>
+<td class='num'>953</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600843</td>
+<td>10/08/2026</td>
+<td>DN-0115/0826:510-UB-101</td>
+<td>INVISIBLE TULLE BRIGHT TM SOFT                                                                      </td>
+<td>24K-2431D </td>
+<td>Sandy Shores coloro 029-74-14</td>
+<td class='num'>287</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>2,276</td>
+<td class='num bal-cell'>7,724</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>10,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>2,276</strong></td>
+<td></td>
+<td class='num'><strong>7,724</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205484AA____________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205484AA             &nbsp; 205484AA                                                                                             &nbsp;&nbsp; <strong>Composition :</strong> 100% PA</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205826AA____________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205826AA             &nbsp; 205826AA                                                                                             &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205898______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205898               &nbsp; ITRI TM soft                                                                                         &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_205950______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 205950               &nbsp; 205950                                                                                               &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_206524AA____________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 206524AA             &nbsp; CO/PA PIQUET                                                                                         &nbsp;&nbsp; <strong>Composition :</strong> 59% CO, 41% PA</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_207065______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 207065               &nbsp; 207065                                                                                               &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='9' class='st-cell'>ST-2600075</td>
+<td rowspan='9' class='st-cell'>08/06/2026</td>
+<td rowspan='9' class='st-cell'>207065                                                                                              </td>
+<td rowspan='9' class='st-cell'>207065              </td>
+<td rowspan='9' class='st-cell'>GREIGE</td>
+<td rowspan='9' class='st-cell num'>7,500</td>
+<td rowspan='9' class='st-cell'>MTS       </td>
+<td>OC-2600584</td>
+<td>11/06/2026</td>
+<td>4500372525</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-2386L </td>
+<td>0RG SOFT PINK</td>
+<td class='num'>600</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600670</td>
+<td>29/06/2026</td>
+<td>4500373858</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-0063L </td>
+<td>0LW Milk</td>
+<td class='num'>1,000</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600672</td>
+<td>29/06/2026</td>
+<td>4500373363</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-4438L </td>
+<td>701 PETAL POWDER</td>
+<td class='num'>900</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600670</td>
+<td>29/06/2026</td>
+<td>4500373858</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-6319L </td>
+<td>403 Sky bloom</td>
+<td class='num'>1,500</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600673</td>
+<td>29/06/2026</td>
+<td>4500373374</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-7231M </td>
+<td>084 Ocean Green</td>
+<td class='num'>500</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600704</td>
+<td>09/07/2026</td>
+<td>4500374261</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-6344D </td>
+<td>404 ELECTRIC BREEZE</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600703</td>
+<td>09/07/2026</td>
+<td>4500374317</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-9093S </td>
+<td>011 BLACK</td>
+<td class='num'>700</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600785</td>
+<td>22/07/2026</td>
+<td>4500374950</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-2371L </td>
+<td>01N Beige dore</td>
+<td class='num'>400</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600780</td>
+<td>22/07/2026</td>
+<td>4500374717</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-9093S </td>
+<td>011 Black</td>
+<td class='num'>700</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>6,500</td>
+<td class='num bal-cell'>1,000</td>
+</tr>
+<tr>
+<td rowspan='4' class='st-cell'>ST-2600097</td>
+<td rowspan='4' class='st-cell'>13/07/2026</td>
+<td rowspan='4' class='st-cell'>207065                                                                                              </td>
+<td rowspan='4' class='st-cell'>207065              </td>
+<td rowspan='4' class='st-cell'>GREIGE</td>
+<td rowspan='4' class='st-cell num'>5,500</td>
+<td rowspan='4' class='st-cell'>MTS       </td>
+<td>OC-2600826</td>
+<td>03/08/2026</td>
+<td>4500375319</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-0063L </td>
+<td>0LW Milk</td>
+<td class='num'>1,600</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600826</td>
+<td>03/08/2026</td>
+<td>4500375319</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-2340L </td>
+<td>0WU Nude</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600826</td>
+<td>03/08/2026</td>
+<td>4500375319</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>24K-9093S </td>
+<td>011 Black</td>
+<td class='num'>800</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600857</td>
+<td>13/08/2026</td>
+<td>4500375623</td>
+<td>Recycle CHARLOTTE TM Soft                                                                           </td>
+<td>          </td>
+<td>603 Redwood</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>2,800</td>
+<td class='num bal-cell'>2,700</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>13,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>9,300</strong></td>
+<td></td>
+<td class='num'><strong>3,700</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_207156______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 207156               &nbsp; 207156                                                                                               &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_207207______________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 207207               &nbsp; Savant TM MO,BOD                                                                                     &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_254823AA_15_________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 254823AA/15          &nbsp; ELASTIC TULLE TM PFD 4823AA                                                                          &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_255048AA_15_________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 255048AA/15          &nbsp; PES TULLE INVISIBLE PFD                                                                              &nbsp;&nbsp; <strong>Composition :</strong> 100% PES</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_255589AB_16_________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 255589AB/16          &nbsp; PES TULLE TM PFE 5589AB                                                                              &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600081</td>
+<td rowspan='1' class='st-cell'>11/06/2026</td>
+<td rowspan='1' class='st-cell'>PES TULLE TM PFE 5589AB                                                                             </td>
+<td rowspan='1' class='st-cell'>255589AB/16         </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>5,000</td>
+<td rowspan='1' class='st-cell'>YDS       </td>
+<td>OC-2600707</td>
+<td>10/07/2026</td>
+<td>M067978</td>
+<td>PES TULLE TM PFE 5589AB                                                                             </td>
+<td>PFE       </td>
+<td>PFE</td>
+<td class='num'>5,000</td>
+<td>YDS       </td>
+<td class='num ttl-cell'>5,000</td>
+<td class='num bal-cell'>0</td>
+</tr>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600094</td>
+<td rowspan='1' class='st-cell'>10/07/2026</td>
+<td rowspan='1' class='st-cell'>PES TULLE TM PFE 5589AB                                                                             </td>
+<td rowspan='1' class='st-cell'>255589AB/16         </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>10,000</td>
+<td rowspan='1' class='st-cell'>YDS       </td>
+<td>OC-2600751</td>
+<td>16/07/2026</td>
+<td>M068260</td>
+<td>PES TULLE TM PFE 5589AB                                                                             </td>
+<td>PFE       </td>
+<td>PFE</td>
+<td class='num'>10,000</td>
+<td>YDS       </td>
+<td class='num ttl-cell'>10,000</td>
+<td class='num bal-cell'>0</td>
+</tr>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600106</td>
+<td rowspan='1' class='st-cell'>01/08/2026</td>
+<td rowspan='1' class='st-cell'>PES TULLE TM PFE 5589AB                                                                             </td>
+<td rowspan='1' class='st-cell'>255589AB/16         </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>15,000</td>
+<td rowspan='1' class='st-cell'>YDS       </td>
+<td>OC-2600836</td>
+<td>07/08/2026</td>
+<td>2100000198</td>
+<td>PES TULLE TM PFE 5589AB                                                                             </td>
+<td>PFE       </td>
+<td>PFE</td>
+<td class='num'>15,000</td>
+<td>YDS       </td>
+<td class='num ttl-cell'>15,000</td>
+<td class='num bal-cell'>0</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>30,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>30,000</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_255603AA_15_________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 255603AA/15          &nbsp; ELASTIC TULLE PASCAL WIDER TM PFD                                                                    &nbsp;&nbsp; <strong>Composition :</strong> 70% PA, 30% ELASTANE</p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600091</td>
+<td rowspan='1' class='st-cell'>03/07/2026</td>
+<td rowspan='1' class='st-cell'>ELASTIC TULLE PASCAL WIDER TM PFD                                                                   </td>
+<td rowspan='1' class='st-cell'>255603AA/15         </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>7,000</td>
+<td rowspan='1' class='st-cell'>MTS       </td>
+<td>OC-2600735</td>
+<td>14/07/2026</td>
+<td>BF260013</td>
+<td>ELASTIC TULLE PASCAL WIDER TM PFD                                                                   </td>
+<td>PFD       </td>
+<td>PFD</td>
+<td class='num'>10,000</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>10,000</td>
+<td class='num bal-cell'>-3,000</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>7,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>10,000</strong></td>
+<td></td>
+<td class='num'><strong>-3,000</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_255729AA_15_________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> 255729AA/15          &nbsp; CEIBA TM PFD 5729AA                                                                                  &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_IAY-076AA_11________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> IAY-076AA/11         &nbsp; 2943 SOFT TM SOFT.                                                                                   &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_IAY-077AA_11________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> IAY-077AA/11         &nbsp; 2975 SOFT TM SOFT.                                                                                   &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_RAY-051AA_67________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> RAY-051AA/67         &nbsp; GAYLY TM MO,BOD                                                                                      &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_SAP-636BB_90________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> SAP-636BB/90         &nbsp; DIAZ TM BIF+Softphilic + BOD                                                                         &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>0</strong></td>
+<td></td>
+<td class='num'><strong>0</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_W7HT004-1A__________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> W7HT004-1A           &nbsp; W7HT004-1A                                                                                           &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='1' class='st-cell'>ST-2600086</td>
+<td rowspan='1' class='st-cell'>30/06/2026</td>
+<td rowspan='1' class='st-cell'>W7HT004-1A                                                                                          </td>
+<td rowspan='1' class='st-cell'>W7HT004-1A          </td>
+<td rowspan='1' class='st-cell'>GREIGE</td>
+<td rowspan='1' class='st-cell num'>3,000</td>
+<td rowspan='1' class='st-cell'>MTS       </td>
+<td>OC-2600833</td>
+<td>06/08/2026</td>
+<td>345876</td>
+<td>Sorex TM Soft-S                                                                                     </td>
+<td>24K-0114D </td>
+<td>612 CRYSTAL</td>
+<td class='num'>400</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>400</td>
+<td class='num bal-cell'>2,600</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>3,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>400</strong></td>
+<td></td>
+<td class='num'><strong>2,600</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+<div id='d_W9HV001-1A__________' class='detail-section'>
+<div class='detail-wrap'>
+<p class='det-title'><strong>Product :</strong> W9HV001-1A           &nbsp; W9HV001-1A                                                                                           &nbsp;&nbsp; <strong>Composition :</strong>  </p>
+<div style='overflow-x:auto'>
+<table class='tbl-merged'>
+<thead>
+<tr>
+<th colspan='7' class='sec-hdr-left'>GREIGE BOOKING</th>
+<th colspan='10' class='sec-hdr-right'>ORDER</th>
+</tr>
+<tr>
+<th>S/T No.</th><th>Date</th><th>Product</th><th>Design</th><th>CUS Color</th><th class='num'>QTY</th><th>UOM</th>
+<th>O/C No.</th><th>OC Date</th><th>Customer PO</th><th>Product</th><th>CUS Color</th><th>Code Color</th><th class='num'>QTY</th><th>UOM</th><th class='num'>TTL Order</th><th class='num'>Balance Qty.</th>
+</tr>
+</thead><tbody>
+<tr>
+<td rowspan='6' class='st-cell'>ST-2600096</td>
+<td rowspan='6' class='st-cell'>13/07/2026</td>
+<td rowspan='6' class='st-cell'>W9HV001-1A                                                                                          </td>
+<td rowspan='6' class='st-cell'>W9HV001-1A          </td>
+<td rowspan='6' class='st-cell'>GREIGE</td>
+<td rowspan='6' class='st-cell num'>3,000</td>
+<td rowspan='6' class='st-cell'>MTS       </td>
+<td>OC-2600672</td>
+<td>29/06/2026</td>
+<td>4500373363</td>
+<td>Invisible voile TM Soft-s                                                                           </td>
+<td>24K-1090W </td>
+<td>010 White</td>
+<td class='num'>300</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600668</td>
+<td>29/06/2026</td>
+<td>4500373440</td>
+<td>Invisible voile TM Soft-s                                                                           </td>
+<td>24K-4478L </td>
+<td>701 petal powder</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600783</td>
+<td>22/07/2026</td>
+<td>4500374635</td>
+<td>Invisible voile TM Soft-s                                                                           </td>
+<td>          </td>
+<td>702 WINE CRUSH</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600780</td>
+<td>22/07/2026</td>
+<td>4500374717</td>
+<td>Invisible voile TM Soft-s                                                                           </td>
+<td>24K-2480M </td>
+<td>0RG Soft pink</td>
+<td class='num'>300</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600784</td>
+<td>22/07/2026</td>
+<td>4500374703</td>
+<td>Invisible voile TM Soft-s                                                                           </td>
+<td>24K-6354S </td>
+<td>0K4 SAPHIR</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td></td><td></td>
+</tr>
+<tr>
+<td>OC-2600856</td>
+<td>12/08/2026</td>
+<td>4500375576</td>
+<td>Invisible voile TM Soft-s                                                                           </td>
+<td>          </td>
+<td>0AS Cassis</td>
+<td class='num'>200</td>
+<td>MTS       </td>
+<td class='num ttl-cell'>1,400</td>
+<td class='num bal-cell'>1,600</td>
+</tr>
+<tr class='tot-row'>
+<td colspan='5'><strong>Total</strong></td>
+<td class='num'><strong>3,000</strong></td>
+<td></td>
+<td colspan='7'></td>
+<td class='num'><strong>1,400</strong></td>
+<td></td>
+<td class='num'><strong>1,600</strong></td>
+</tr>
+</tbody></table></div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
