@@ -208,7 +208,7 @@
     <Compile Include="Classes\classCMR\ClassCMR.vb" />
     <Compile Include="Classes\classColors\classColors.vb" />
     <Compile Include="Classes\classConfig\clsConfig.vb" />
-    <Compile Include="Classes\classConnection\classConnectionEschlerDB.vb" />
+    <Compile Include="Classes\classConnection\ClassConnectionColomboDB.vb" />
     <Compile Include="Classes\classSTOrderClosing\classSTOrderClosingBLL.vb" />
     <Compile Include="Classes\classCustomers\classCustomers.vb" />
     <Compile Include="Classes\classCuttingIN\classCuttingIN.vb" />

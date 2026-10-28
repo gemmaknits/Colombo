@@ -53,6 +53,7 @@ Partial Class FrmColomboMain
         Me.btnOperationKnitting = New System.Windows.Forms.Button()
         Me.btnKnittingOrder = New System.Windows.Forms.Button()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.btnSoSummary = New System.Windows.Forms.Button()
         Me.btnColor = New System.Windows.Forms.Button()
         Me.btnEndBuyer = New System.Windows.Forms.Button()
         Me.btnAgent = New System.Windows.Forms.Button()
@@ -76,12 +77,15 @@ Partial Class FrmColomboMain
         Me.btnStockMovement = New System.Windows.Forms.Button()
         Me.btnStockOnhand = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.btnInvoiceLocalControl = New System.Windows.Forms.Button()
         Me.btnInvoiceExportControl = New System.Windows.Forms.Button()
         Me.btnDebitNote = New System.Windows.Forms.Button()
         Me.btnInvoiceExport = New System.Windows.Forms.Button()
         Me.btnCreditNote = New System.Windows.Forms.Button()
         Me.btnInvoiceLocal = New System.Windows.Forms.Button()
         Me.gbDyedStock = New System.Windows.Forms.GroupBox()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnDINDocument = New System.Windows.Forms.Button()
         Me.btnDyedInPurchase = New System.Windows.Forms.Button()
         Me.btnDyedOutFromRequest = New System.Windows.Forms.Button()
         Me.btnPackingListDyed = New System.Windows.Forms.Button()
@@ -95,8 +99,6 @@ Partial Class FrmColomboMain
         Me.btnRequestGreige = New System.Windows.Forms.Button()
         Me.btnGreigeOutDF = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.btnInvoiceLocalControl = New System.Windows.Forms.Button()
-        Me.btnSoSummary = New System.Windows.Forms.Button()
         Me.ToolStrip1.SuspendLayout()
         Me.StatusStrip1.SuspendLayout()
         Me.gbYarnStock.SuspendLayout()
@@ -385,6 +387,15 @@ Partial Class FrmColomboMain
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Order Management"
         '
+        'btnSoSummary
+        '
+        Me.btnSoSummary.Location = New System.Drawing.Point(105, 105)
+        Me.btnSoSummary.Name = "btnSoSummary"
+        Me.btnSoSummary.Size = New System.Drawing.Size(89, 36)
+        Me.btnSoSummary.TabIndex = 16
+        Me.btnSoSummary.Text = "S/O Summary"
+        Me.btnSoSummary.UseVisualStyleBackColor = True
+        '
         'btnColor
         '
         Me.btnColor.Location = New System.Drawing.Point(9, 105)
@@ -621,6 +632,15 @@ Partial Class FrmColomboMain
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Invoice"
         '
+        'btnInvoiceLocalControl
+        '
+        Me.btnInvoiceLocalControl.Location = New System.Drawing.Point(10, 104)
+        Me.btnInvoiceLocalControl.Name = "btnInvoiceLocalControl"
+        Me.btnInvoiceLocalControl.Size = New System.Drawing.Size(83, 36)
+        Me.btnInvoiceLocalControl.TabIndex = 15
+        Me.btnInvoiceLocalControl.Text = "Inv. Local Control"
+        Me.btnInvoiceLocalControl.UseVisualStyleBackColor = True
+        '
         'btnInvoiceExportControl
         '
         Me.btnInvoiceExportControl.Location = New System.Drawing.Point(99, 103)
@@ -668,6 +688,8 @@ Partial Class FrmColomboMain
         '
         'gbDyedStock
         '
+        Me.gbDyedStock.Controls.Add(Me.Button2)
+        Me.gbDyedStock.Controls.Add(Me.btnDINDocument)
         Me.gbDyedStock.Controls.Add(Me.btnDyingOrder)
         Me.gbDyedStock.Controls.Add(Me.btnDyedInPurchase)
         Me.gbDyedStock.Controls.Add(Me.btnDyedOutFromRequest)
@@ -680,6 +702,24 @@ Partial Class FrmColomboMain
         Me.gbDyedStock.TabIndex = 12
         Me.gbDyedStock.TabStop = False
         Me.gbDyedStock.Text = "Dyed / Cutting Stock "
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(97, 186)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(81, 40)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "Dyed OUT Document"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'btnDINDocument
+        '
+        Me.btnDINDocument.Location = New System.Drawing.Point(6, 188)
+        Me.btnDINDocument.Name = "btnDINDocument"
+        Me.btnDINDocument.Size = New System.Drawing.Size(83, 40)
+        Me.btnDINDocument.TabIndex = 17
+        Me.btnDINDocument.Text = "Dyed IN Document"
+        Me.btnDINDocument.UseVisualStyleBackColor = True
         '
         'btnDyedInPurchase
         '
@@ -811,24 +851,6 @@ Partial Class FrmColomboMain
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(1264, 635)
         Me.TableLayoutPanel1.TabIndex = 91
         '
-        'btnInvoiceLocalControl
-        '
-        Me.btnInvoiceLocalControl.Location = New System.Drawing.Point(10, 104)
-        Me.btnInvoiceLocalControl.Name = "btnInvoiceLocalControl"
-        Me.btnInvoiceLocalControl.Size = New System.Drawing.Size(83, 36)
-        Me.btnInvoiceLocalControl.TabIndex = 15
-        Me.btnInvoiceLocalControl.Text = "Inv. Local Control"
-        Me.btnInvoiceLocalControl.UseVisualStyleBackColor = True
-        '
-        'btnSoSummary
-        '
-        Me.btnSoSummary.Location = New System.Drawing.Point(105, 105)
-        Me.btnSoSummary.Name = "btnSoSummary"
-        Me.btnSoSummary.Size = New System.Drawing.Size(89, 36)
-        Me.btnSoSummary.TabIndex = 16
-        Me.btnSoSummary.Text = "S/O Summary"
-        Me.btnSoSummary.UseVisualStyleBackColor = True
-        '
         'FrmColomboMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -936,4 +958,6 @@ Partial Class FrmColomboMain
     Friend WithEvents btnProdGreigeDeliveryControl As Button
     Friend WithEvents btnInvoiceLocalControl As Button
     Friend WithEvents btnSoSummary As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents btnDINDocument As Button
 End Class

@@ -1539,6 +1539,14 @@ Public Class FrmColomboMain
         frm.Show()
     End Sub
 
+    Private Sub btnDINDocument_Click(sender As Object, e As EventArgs) Handles btnDINDocument.Click
+        callFrmStdParameter(New SalesOrderSystem.frmDINDocument)
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        callFrmStdParameter(New SalesOrderSystem.frmDOUTDocument)
+    End Sub
+
 
 
 #End Region
